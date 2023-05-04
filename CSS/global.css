@@ -1,6 +1,68 @@
-body{
+body {
     margin: 15px 40px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: #012C5F;
+}
+
+p{
+    font-family: Montserrat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li:hover {
+    background-color: #ddd;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+}
+
+nav ul ul li {
+    display: block;
+    width: 200px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #012C5F;
+}
+
+nav ul ul li a {
+    display: block;
+    padding: 10px;
+    color: #012C5F;
+    text-decoration: none;
+}
+
+nav ul ul li:hover {
+    background-color: #f5f5f5;
 }
