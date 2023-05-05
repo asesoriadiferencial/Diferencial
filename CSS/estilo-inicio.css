@@ -31,6 +31,10 @@
     color: #FFFFFF;
 }
 
+p{
+    color: white;
+}
+
 .banner-inicial p {
     position: absolute;
     width: 645.13px;
@@ -85,4 +89,8 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+.pie-pagina p{
+    color: #01387B;
 }
