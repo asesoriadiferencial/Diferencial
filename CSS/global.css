@@ -5,8 +5,15 @@ body {
     color: #012C5F;
 }
 
-p{
-    font-family: Montserrat;
+p {
+    font-family: 'Montserrat', sans-serif;    ;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 150% */
+    text-align: justify;
+    color: black
 }
 
 header {
