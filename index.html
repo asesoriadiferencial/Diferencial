@@ -1,304 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <!--#region:meta-->
+    <meta charset="UTF-8" />
+    <meta enconding="iso-8859-1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Consultoría empresarial, Asesoria de empresas,"
+    />
+    <meta name="autor" content="Luis Saúl Brenes Chávez" />
+    <meta
+      name="Description"
+      content="Sitio web de la asesoria empresarial Diferencial (proyecto a empresa ficticia)"
+    />
+    <!-- #endregion:meta -->
+    <!-- #region:Links-->
+    <link rel="icon" href="/img/diferencial/logo.ico" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/estilo-inicio.css" />
+    <!-- #endregion: Links -->
+    <title>DIFERENCIAL</title>
+  </head>
 
-<head>
-  <!--#region:meta-->
-  <meta charset="UTF-8" />
-  <meta enconding="iso-8859-1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="Consultoría empresarial, Asesoria de empresas," />
-  <meta name="autor" content="Luis Saúl Brenes Chávez" />
-  <meta name="Description" content="Sitio web de la asesoria empresarial Diferencial (proyecto a empresa ficticia)" />
-  <!-- #endregion:meta -->
-  <!-- #region:Links-->
-  <link rel="icon" href="/img/diferencial/logo.ico" />
-  <link rel="stylesheet" href="/css/global.css" />
-  <link rel="stylesheet" href="/css/estilo-inicio.css">
-  <!-- #endregion: Links -->
-  <title>DIFERENCIAL</title>
-</head>
+  <body>
+    
+    <!--CABECERA-->
+    <header class="cabecera">
+      <a href="/index.html" class="cabecera-logo">
+        <img src="/img/diferencial/logo-Nombre.png" alt="Logo" />
+      </a>
 
-<body>
-  <header>
-    <div>
-      <img src="/img/diferencial/logo-Nombre.png" alt="Logo DIFERENCIAL" width="200" height="48" />
-    </div>
+      <nav class="cabecera-menu">
+        <ul>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/nosotros.html">Nosotros</a></li>
+          <li>
+            <a href="/servicios.html">Servicios</a>
+            <ul>
+              <li>
+                <a href="/servicio/planificacion-estrategica.html"
+                  >Planificación estratégica</a
+                >
+              </li>
+              <li>
+                <a href="/servicio/marketing-digital.html">Marketing Digital</a>
+              </li>
+              <li>
+                <a href="/servicio/optimizacion-procesos.html"
+                  >Optimización de procesos</a
+                >
+              </li>
+              <li>
+                <a href="/servicio/consultoria-financiera.html"
+                  >Consultoría financiera</a
+                >
+              </li>
+              <li>
+                <a href="/servicio/analisis-competencia.html"
+                  >Análisis de competencia</a
+                >
+              </li>
+              <li>
+                <a href="/servicio/consultoria-recursos-humanos.html"
+                  >Consultoría de recursos humanos</a
+                >
+              </li>
+              <li>
+                <a href="/planes.html">Planes</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/blog.html">Blog</a>
+            <ul>
+              <li><a href="/blog.html">Tendencias del mercado</a></li>
+              <li><a href="/blog.html">Consejos para empresas</a></li>
+              <li><a href="/blog.html">Estretegias de crecimiento</a></li>
+              <li><a href="/blog.html">Finanzas y contabilidad</a></li>
+            </ul>
+          </li>
+          <li><a href="/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
 
-    <nav class="cabecera-menu">
-      <ul>
-        <li><a href="/index.html">Inicio</a></li>
-        <li><a href="/nosotros.html">Nosotros</a></li>
-        <li><a href="/servicios.html">Servicios</a>
-          <ul>
-            <li>
-              <a href="/servicio/planificacion-estrategica.html">Planificación estratégica</a>
-            </li>
-            <li>
-              <a href="/servicio/marketing-digital.html">Marketing Digital</a>
-            </li>
-            <li>
-              <a href="/servicio/optimizacion-procesos.html">Optimización de procesos</a>
-            </li>
-            <li>
-              <a href="/servicio/consultoria-financiera.html">Consultoría financiera</a>
-            </li>
-            <li>
-              <a href="/servicio/analisis-competencia.html">Análisis de competencia</a>
-            </li>
-            <li>
-              <a href="/servicio/consultoria-recursos-humanos.html">Consultoría de recursos humanos</a>
-            </li>
-            <li>
-              <a href="/planes.html">Planes</a>
-            </li>
-          </ul>
-        </li>
-        <li><a href="/blog.html">Blog</a>
-          <ul>
-            <li><a href="/blog.html">Tendencias del mercado</a></li>
-            <li><a href="/blog.html">Consejos para empresas</a></li>
-            <li><a href="/blog.html">Estretegias de crecimiento</a></li>
-            <li><a href="/blog.html">Finanzas y contabilidad</a></li>
-          </ul>
-        </li>
-        <li><a href="/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-
-    <nav class="cabecera-opciones">
-      <ul>
-        <li>
+      <div class="cabecera-acciones">
+        <div class="cabecera-acciones__busqueda">
           <input type="text" name="busqueda" id="busqueda" />
-          <img src="/img/icon/busqueda.svg" alt="Buscar" />
-        </li>
-        <li>
-          <a href="/facturacion.html">
-            <img src="/img/icon/facturacion.svg" alt="Facturación" />
-          </a>
-        </li>
-        <li><a href="/inicio-sesion.html">Iniciar sesión</a></li>
-      </ul>
-    </nav>
-  </header>
+          <img src="/img/icon/busqueda.svg" alt="Buscar" class="icon-busqueda" />
+        </div>
 
-  <div class="banner-inicial">
-    <img src="/img/empleado-mes-banner.png" alt="" height="448px" /> 
-    <!--#region<img src="/img/Banner-Inicial.png" alt="Fondo" />-->
-    <h1>EL ALIADO IDEAL PARA TU NEGOCIO</h1>
-    <p>
-      Ayudamos a tu empresa a alcanzar el máximo potencial y diferenciarse en
-      un mercado competitivo.
-    </p>
-    <button>Contratar servicios</button>
-  </div>
+        <a href="/facturacion.html">
+          <img src="/img/icon/facturacion.svg" alt="Facturación" class="icon-facturacion" />
+        </a>
 
-  <div class="caracteristicas">
-    <h2>TE BRINDAMOS</h2>
-    <div style="color: white;  background: #01387B;">
-      <img src="/img/icon/puzzel.svg" alt="img" />
-      <p>Soluciones personalizadas para tu empresa</p>
-    </div>
-    <div style="color: white;  background: #01387B;">
-      <img src="/img/icon/personal-experiencia.svg" alt="img" />
-      <p>Personal con experiencia a tu servicios</p>
-    </div>
-    <div style="color: white;  background: #01387B;">      
-      <img src="/img/icon/foco-luz.svg" alt="img" />
-      <p>Soluciones empresariales innovadoras</p>
-    </div>
-    <div style="color: white;  background: #01387B;">      
-      <img src="/img/icon/comunicacion.svg" alt="img" />
-      <p>Comunicación clara y efectiva en todo el proceso</p>
-    </div>
-  </div>
-
-  <div class="servicios" style="background-color: #01387B; color: white; margin: 5px;">
-    <h2>NUESTROS SERVICIOS</h2>
-    <a style="color: white;" href="">Más información</a>
-    <article style="background-color: white; color: #01387B; margin: 20px;">
-      <img src="/img/icon/planestrategica.svg" alt="img-servicio" />
-      <strong>Planificación estretegica</strong>
-      <p>
-        Dirige tu empresa hacia el éxito con un planificación estratégica
-        personalizada.
-      </p>
-      <a href="">Leer más</a>
-    </article>
-
-    <article style="background-color: white; color: #01387B; margin: 20px;">
-      <img src="/img/icon/md.svg" alt="img-servicio" />
-      <strong>Marketing Digital</strong>
-      <p>Atrae y retiene clientes usando adecuadamente las redes sociales.</p>
-      <a href="">Leer más</a>
-    </article>
-
-    <article style="background-color: white; color: #01387B; margin: 20px;">
-      <img src="/img/icon/op.svg" alt="img-servicio" />
-      <strong>Optimización de procesos</strong>
-      <p>
-        Simplifica y optimiza tus procesos empresariales con nuestra ayuda
-        experta.
-      </p>
-      <a href="">Leer más</a>
-    </article>
-
-    <article style="background-color: white; color: #01387B; margin: 20px;">
-      <img src="/img/icon/cf.svg" alt="img-servicio" />
-      <strong>Consultoría financiera</strong>
-      <p>
-        Maneja correctamente tu activo más valioso y aprovechas las
-        oportunidades.
-      </p>
-      <a href="">Leer más</a>
-    </article>
-
-    <article style="background-color: white; color: #01387B; margin: 20px;">
-      <img src="/img/icon/ac.svg" alt="img-servicio" />
-      <strong>Análisis de competencia</strong>
-      <p>
-        Para diferenciarse de un mercado competitivo es necesarios conocer
-        contra quien compites.
-      </p>
-      <a href="">Leer más</a>
-    </article>
-
-    <article style="background-color: white; color: #01387B; margin: 20px;">
-      <img src="/img/icon/crh.svg" alt="img-servicio" />
-      <strong>Consultoría de recursos humanos</strong>
-      <p>
-        Administra de manera eficaz y efectiva a tu personal para alcanzar tus
-        objetivos organizacionales.
-      </p>
-      <a href="">Leer más</a>
-    </article>
-  </div>
-
-  <div class="estadisticas">
-    <div>
-      <img src="/img/icon/bandera.svg" alt="img-est" />
-      <h3>20</h3>
-      <h4>AÑOS EN EL MERCADO</h4>
-    </div>
-    <div>
-      <img src="/img/icon/serviciosrealizados.svg" alt="img-est" />
-      <h3>150</h3>
-      <h4>SERVICIOS REALIZADOS</h4>
-    </div>
-    <div>
-      <img src="/img/icon/clientes.svg" alt="img-est" />
-      <h3>35</h3>
-      <h4>CLIENTES SATISFECHOS</h4>
-    </div>
-    <div>
-      <img src="/img/icon/certificado.svg" alt="img-est" />
-      <h3>4</h3>
-      <h4>ACREDITACIONES NORMAS ISO</h4>
-    </div>
-  </div>
-
-  <div class="carousel-clientes">
-    <h2>NUESTROS CLIENTES</h2>
-    <div class="carousel-images">
-      <img src="/Media/Images/Clientes/logo_DINAMIS.png" alt="Grupo Coen" width="200" height="auto" />
-      <img src="/Media/Images/Clientes/logo-Grupo-Coen.png" alt="Grupo Coen" width="200" height="auto" />
-      <img src="/Media/Images/Clientes/logo_Banpro.png" alt="Banpro" />
-      <img src="/Media/Images/Clientes/logo_cafe-ox.png" alt="CAFE-OX" width="200" height="auto" />
-      <img src="/Media/Images/Clientes/logo_excel.png" alt="EXCEL" width="200" height="auto" />
-      <img src="/Media/Images/Clientes/logo_LAFISE.png" alt="Banco LAFISE" width="200" height="auto" />
-      <img src="/Media/Images/Clientes/logo_Lanco.webp" alt="LANCO" width="200" height="auto" />
-      <img src="/Media/Images/Clientes/logo_siman.png" alt="logo_siman" width="200" height="auto" />
-    </div>
-    <button class="prev">Anterior</button>
-    <button class="next">Siguiente</button>
-  </div>
-
-  <br>
-
-  <div class="contenedor-contacto">
-    <img src="/img/Imagen25.png" alt="img-contacto" />
-    <div class="formulario-contacto">
-      <h3>Contacto</h3>
-      <p>
-        Proporcione sus datos e información sobre su consulta y nos pondremos
-        en contacto con usted lo antes posible.
-      </p>
-      <form action="" method="post">
-        <input type="text" id="nombre" name="nombrew" placeholder="Nombre" required />
-        <input type="email" id="email" name="email" placeholder="Correo electrónico" required />
-        <br>
-        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required />
-        <select id="servicio-interesado" name="servicio-interesado">
-          <option value="SI">Servicio interesado</option>
-          <option value="PE">Planificación estratégica</option>
-          <option value="MD">Marketing Digital</option>
-          <option value="OP">Optimización de procesos</option>
-          <option value="CF">Consultoría financiera</option>
-          <option value="AC">Análisis de competencia</option>
-          <option value="CRH">Consultoría de recursos humanos</option>
-        </select>
-        <br>
-        <textarea name="mensaje" id="mensaje" placeholder="Escribir mensaje"></textarea>
-        <br>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </div>
-
-  <br>
-
-  <footer class="pie-pagina">
-    <div>
-      <img src="/img/diferencial/logo-Nombre.png" alt="logo DIFERENCIAL" width="200px" height="auto" />
-      <p>
-        Ofrecemos asesoría empresarial personalizada a empresas de todos los
-        tamaños y sectores, con el objetivo de ayudarlas a alcanzar su máximo
-        potencial.
-      </p>
-      <div class="redes">
-        <a href=""><img src="/img/icon/FB.svg" alt="Facebook" /></a>
-        <a href=""><img src="/img/icon/ig.svg" alt="Instragram" /></a>
-        <a href=""><img src="/img/icon/linkein.svg" alt="LinkedIn" /></a>
+        <a href="/inicio-sesion.html">
+          <button class="btn-login">Iniciar sesión</button>
+        </a>
       </div>
-    </div>
-    <div class="menu-pie-pagina">
-      <strong>Menú</strong>
-      <ul>
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Nosotros</a></li>
-        <li><a href="">Servicios</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Contacto</a></li>
-      </ul>
-    </div>
+    </header>
 
-    <div class="informacion-contacto-pp">
-      <strong>Información de contacto</strong>
-      <br>
-      <img src="/img/icon/ubicacion.svg" alt="Ubicación" style="display: inline;" />
-      <p style="display: inline;" >Ofinova Centro Empresarial, Modulo 0B30, Km 11.5 Carretera Masaya</p>
-      <br><br>
-      <img src="/img/icon/horario.svg" alt="Horarios de atención" style="display: inline;"/>
-      <p style="display: inline;">Lunes - Viernes 8:00 A.M. - 4:30 P.M.</p>
-      <br><br>
-      <img src="/img/icon/telefono.svg" alt="Teléfono" style="display: inline;" />
-      <p style="display: inline;">(505) 2546-6789</p>
-      <br><br>
-      <img src="/img/icon/email.svg" alt="Correo" style="display: inline;" />
-      <p style="display: inline;">contactodiferencial@dae.com</p>
-    </div>
+    <!--BANNER IBICIAL-->
+    <main class="banner">
+      
+    </main>
 
-    <br><br>
 
-    <div class="suscripcion-blog">
-      <strong>Suscribete a nuestro blog</strong>
-      <p>No te pierdas de las últimas noticias y acontecer empresarial</p>
-      <form action="HTML/blog.html" method="post">
-        <input type="email" name="email-suscripcion" id="email-suscripcion" placeholder="Correo electrónico" />
-        <button type="submit" class="boton">Suscribirse</button>
-      </form>
-    </div>
-  </footer>
-</body>
-
-<>
+  </body>
+</html>

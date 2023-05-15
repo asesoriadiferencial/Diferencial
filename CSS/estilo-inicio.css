@@ -1,87 +1,103 @@
-.banner-inicial {
-    position: block;
-    width: 1346px;
-    height: 450px;
-    left: 42px;
-    top: 78px;
-    background-image: url("/Media/Images/Recursos/Banner-Inicial.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+
+    position: absolute;
+    width: 100%;
+    height: 78px;
+    left: 0px;
+    top: 0px;
+
+    /* Fondo */
+    background: #FFFFFF;
 }
 
-.banner-inicial h1 {
-    position: absolute;
-    width: 935px;
-    height: 214px;
-    right: 52px;
-    top: 78px;
+.cabecera-logo img {
+    width: 200px;
+    height: 48px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
 
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 53.41px;
-    line-height: 73px;
+.cabecera-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+
+    width: 453.56px;
+    height: 25px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.cabecera-menu ul {
+    list-style: none;
     display: flex;
     align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-
-    /* Fondo */
-
-    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
 }
 
-p{
-    color: white;
+.cabecera-menu li {
+    margin-right: 20px;
+    position: relative;
 }
 
-.banner-inicial p {
+.cabecera-menu li ul {
+    display: none;
     position: absolute;
-    width: 645.13px;
-    height: 77.29px;
-    left: calc(50% - 645.13px/2 + 200.57px);
-    top: 268px;
-
-    /* P3-Montserrat */
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
-    text-align: center;
-
-    /* Fondo */
-
-    color: #FFFFFF;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.banner-inicial button {
+.cabecera-menu li:hover ul {
+    display: block;
+    margin: 50px;
+}
+
+.cabecera-acciones {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 5px;
+    gap: 20px;
+
+    width: 647px;
+    height: 41px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.cabecera-acciones__busqueda {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 15px 20px;
-    gap: 10px;
+    padding: 0px;
+    gap: 2px;
 
-    position: absolute;
-    width: 300.55px;
-    height: 66.13px;
-    left: calc(50% - 300.55px/2 + 200.28px);
-    top: 383.73px;
-
-    /* Orange-Terciario */
-
-    background: #E46732;
-    border-radius: 15px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27.34px;
-    line-height: 37px;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-
-    color: #FFFFFF;
+    width: 430px;
+    height: 40px;
 
 
     /* Inside auto layout */
@@ -91,6 +107,72 @@ p{
     flex-grow: 0;
 }
 
-.pie-pagina p{
-    color: #01387B;
+.cabecera-acciones__busqueda input {
+    width: 397px;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid #012C5F;
+    border-radius: 7px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.cabecera-acciones img {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-busqueda {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.icon-facturacion {
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.btn-login {
+    width: 130px;
+    height: 40px;
+
+    /* Fondo */
+
+    background: #012C5F;
+    border-radius: 10px;
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+
+}
+
+.btn-login:hover {
+    background-color: #FFFFFF;
+    color: #012C5F;
+    cursor: pointer;
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    top: 79.72px;
+    background: url(/img/banner-inicial.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
