@@ -132,7 +132,7 @@
 /*ESTILOS DE SERVICIOS*/
 .servicios {
     width: 100%;
-    padding: 30px 95px;
+    padding: 20px 95px;
     background-color: #012C5F;
 }
 
@@ -165,10 +165,9 @@
     text-decoration: underline;
 }
 
-.servicios-titulo a:hover{
+.servicios-titulo a:hover {
     color: #D8E6F4;
 }
-
 
 .servicio-cuadricula {
     margin: 15px 0px;
@@ -209,7 +208,7 @@
 }
 
 .servicio-cuadro p {
-    
+
     height: 60px;
     padding: 0px 20px;
 
@@ -234,6 +233,60 @@
     padding: 15px 0px;
 }
 
-.servicio-cuadro:hover{
-    background-color: #D8E6F4 ;
+.servicio-cuadro:hover {
+    background-color: #D8E6F4;
+}
+
+/*ESTILO DE ESTADISTICAS*/
+.estadistica {
+    position: relative;
+    width: calc(100% - 100px);
+    height: 350px;
+    margin: 30px 50px;
+    padding: 52px 26px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+
+    /* Ajusta la altura según tus necesidades */
+    background: linear-gradient(0deg, rgba(1, 56, 123, 0.6), rgba(1, 56, 123, 0.6)), url(/img/tecleando.gif);
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+.estadistica-cuadro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    width: 317px;
+    height: 247px;
+    padding: 20px;
+
+    border-radius: 5px;
+}
+
+.estadistica-numero {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 53.41px;
+    color: #FFFFFF;
+}
+
+.estadistica-titulo {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27.34px;
+    line-height: 37px;
+    text-align: center;
+    color: #FFFFFF;
+
+    margin: 0px 20px;
 }
