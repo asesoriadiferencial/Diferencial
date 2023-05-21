@@ -1,0 +1,189 @@
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+
+    /* Fondo */
+    background: #FFFFFF;
+}
+
+
+.cabecera-logo img {
+    padding: 0px;
+    order: 0;
+    flex-grow: 0;
+    width: 200px;
+    height: 48px;
+}
+
+.cabecera-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: left;
+    padding: 0px;
+
+    width: 510px;
+    height: 48px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.cabecera-menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.cabecera-menu li {
+    margin-right: 25px;
+    position: relative;
+}
+
+.submenu{
+    display: inline-block;
+}
+
+.submenu::after{
+    content: "\25BC"; 
+}
+
+.cabecera-menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    padding: 5px;
+    background-color: rgba(255, 255, 255,0.95);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cabecera-menu li:hover ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    width: 300px;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.cabecera-menu ul li ul li:hover{
+    background-color: #D8E6F4;
+    width: 290px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+
+.cabecera-acciones {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 5px;
+    gap: 20px;
+
+    width: 580px;
+    height: 50px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.cabecera-acciones__busqueda {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding: 0px;
+    gap: 2px;
+
+    width: 130px;
+    height: 40px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.cabecera-acciones__busqueda input {
+    width: 397px;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid #012C5F;
+    border-radius: 7px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: none;
+}
+
+.cabecera-acciones img {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-busqueda {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.icon-facturacion {
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.btn-login {
+    width: 130px;
+    height: 40px;
+
+    /* Fondo */
+
+    background: #012C5F;
+    border-radius: 10px;
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+
+}
+
+.btn-login:hover {
+    background-color: #FFFFFF;
+    color: #012C5F;
+    cursor: pointer;
+}
