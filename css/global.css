@@ -40,3 +40,7 @@ a {
     color: #012C5F;
     text-decoration: none;
 }
+
+button:hover{
+    cursor: pointer;
+}
