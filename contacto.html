@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--#region:meta-->
+    <meta charset="UTF-8" />
+    <meta enconding="iso-8859-1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Consultoría empresarial, Asesoria de empresas,"
+    />
+    <meta name="autor" content="Luis Saúl Brenes Chávez" />
+    <meta
+      name="Description"
+      content="Sitio web de la asesoria empresarial Diferencial (proyecto a empresa ficticia)"
+    />
+    <!-- #endregion:meta -->
+    <!-- #region:Links-->
+    <link rel="icon" href="/img/diferencial/logo.ico" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/cabecera.css" />
+    <link rel="stylesheet" href="/css/pie-pagina.css" />
+    <link rel="stylesheet" href="/css/estilo-contacto.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <title>Diferencial: Asesoría Empresarial</title>
+  </head>
+  <body>
+    <!--CABECERA-->
+    <header class="cabecera">
+      <a href="/index.html" class="cabecera-logo">
+        <img src="/img/diferencial/logo-nombre.png" alt="Logo" />
+      </a>
+
+      <nav class="cabecera-menu">
+        <ul>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/nosotros.html">Nosotros</a></li>
+
+          <li class="submenu">
+            <a href="/servicios.html">Servicios</a>
+            <ul>
+              <li>
+                <a href="/servicio/planificacion-estrategica.html"
+                  >Planificación estratégica</a
+                >
+              </li>
+              <li>
+                <a href="/servicio/marketing-digital.html">Marketing Digital</a>
+              </li>
+              <li>
+                <a href="/servicio/optimizacion-procesos.html"
+                  >Optimización de procesos</a
+                >
+              </li>
+              <li>
+                <a href="/servicio/consultoria-financiera.html"
+                  >Consultoría financiera</a
+                >
+              </li>
+              <li>
+                <a href="/servicio/analisis-competencia.html"
+                  >Análisis de competencia</a
+                >
+              </li>
+              <li>
+                <a href="/servicio/consultoria-recursos-humanos.html"
+                  >Consultoría de recursos humanos</a
+                >
+              </li>
+              <li>
+                <a href="/planes.html">Planes</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="submenu">
+            <a href="/blog.html">Blog</a>
+            <ul>
+              <li><a href="/blog.html">Tendencias del mercado</a></li>
+              <li><a href="/blog.html">Consejos para empresas</a></li>
+              <li><a href="/blog.html">Estretegias de crecimiento</a></li>
+              <li><a href="/blog.html">Finanzas y contabilidad</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="cabecera-acciones">
+        <div class="cabecera-acciones__busqueda">
+          <img
+            src="/img/icon/busqueda.svg"
+            alt="Buscar"
+            class="icon-busqueda"
+          />
+        </div>
+
+        <a href="/facturacion.html">
+          <img
+            src="/img/icon/facturacion.svg"
+            alt="Facturación"
+            class="icon-facturacion"
+          />
+        </a>
+
+        <a href="/inicio-sesion.html">
+          <button class="btn-login">Iniciar sesión</button>
+        </a>
+      </div>
+    </header>
+    <!--CABEBCERA-->
+
+    <!--BANNER DE CONTACTO-->
+    <div class="banner-contacto">
+      <h2>INFORMACIÓN DE CONTACTO</h2>
+      <p>
+        Proporcione sus datos e información sobre su consulta y nos pondremos en
+        contacto con usted lo antes posible
+      </p>
+    </div>
+    <!--BANNER DE CONTACTO-->
+
+    <!--CONTACTO-->
+    <div class="container-contacto">
+      <div class="info-contacto">
+        <!--telefono-->
+        <div class="info-box">
+          <div class="img-contact">
+            <img src="/img/icon/telefono.svg" alt="" />
+          </div>
+          <div>
+            <h3>Telefóno</h3>
+            <a href="tel:+50525466789">+505 2546-6789</a>
+          </div>
+        </div>
+
+        <!--correo-->
+        <div class="info-box">
+          <div class="img-contact">
+            <img src="/img/icon/email.svg" alt="" />
+          </div>
+
+          <div>
+            <h3>Correo</h3>
+            <a href="mailto:contactodiferencial@dae.com"
+              >contactodiferencial@dae.com</a
+            >
+          </div>
+        </div>
+
+        <!--direccción-->
+        <div class="info-box">
+          <div class="img-contact">
+            <img src="/img/icon/ubicacion.svg" alt="" />
+          </div>
+          <div>
+            <h3>Dirección</h3>
+            <a href="https://goo.gl/maps/6R22Xv6fV9azaRe6A"
+              >Ofinova Centro Empresarial, Modulo 0B30, Km 11.5 Carretera Masaya
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-formulario">
+        <h3>ENVIAR MENSAJE</h3>
+        <form action="">
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+          <input
+            type="email"
+            name="correo"
+            id="correo"
+            placeholder="Correo electrónico"
+          />
+          <input
+            type="tel"
+            name="telefono"
+            id="telefono"
+            placeholder="Teléfono"
+          />
+          <select id="servicios-cmb" name="servicios-cmb" title="servicio-cmb">
+            <option value="" disabled selected hidden>
+              Selecciona una opción
+            </option>
+            <option value="consulta-general">Consulta general</option>
+            <option value="planificacion-estrategica">
+              Planificación estratégica
+            </option>
+            <option value="marketing-digital">Marketing digital</option>
+            <option value="reingenieria-procesos">
+              Reingenieria de procesos
+            </option>
+            <option value="consultoria-financiera">
+              Consultoría financiera
+            </option>
+            <option value="analisis-competencia">
+              Análisis de competencia
+            </option>
+            <option value="consultoria-recursos-humanos">
+              Consultoría de recursos humanos
+            </option>
+          </select>
+          <textarea
+            name="mensake"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Escribir mensaje"
+          ></textarea>
+          <input class="btn" type="submit" value="Enviar Mensaje" />
+        </form>
+      </div>
+    </div>
+    <!-- CONTACTO -->
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.585237211645!2d-86.2228545257595!3d12.072033033963423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73ff2e86611a4b%3A0x1e893d9687a626e!2sOfinova%20Centro%20Empresarial!5e0!3m2!1ses!2sni!4v1684734806667!5m2!1ses!2sni"
+      width="100%"
+      height="450px"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <!--PIE DE PAGINA-->
+    <footer class="footer-container">
+      <div class="footer-diferencial">
+        <img src="/img/diferencial/logo-nombre.png" alt="DIFERENCIAL" />
+        <p>
+          Ofrecemos asesoría empresarial personalizada a empresas de todos los
+          tamaños y sectores, con el objetivo de ayudarlas a alcanzar su máximo
+          potencial.
+        </p>
+        <div class="socials">
+          <a href="https://www.facebook.com/asesoriadiferencial" target="_blank"
+            ><img src="/img/icon/fb.svg" alt="FB"
+          /></a>
+          <a
+            href="https://www.instagram.com/asesoriadiferencial"
+            target="_blank"
+            ><img src="/img/icon/ig.svg" alt="IG"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/asesoriadiferencial/"
+            target="_blank"
+            ><img src="/img/icon/linkein.svg" alt="in"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-opciones">
+        <p>Menú</p>
+        <ul>
+          <a href="/index.html"><li>Inicio</li></a>
+          <a href="/nosotros.html"><li>Nosotros</li></a>
+          <a href="/servicio/"><li>Servicios</li></a>
+          <a href="/blog.html"><li>Blog</li></a>
+          <a href="/contacto.html"><li>Contacto</li></a>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h6>Información de contacto</h6>
+
+        <div class="footer-contact-element">
+          <img src="/img/icon/ubicacion.svg" alt="Ubicación" />
+          <p>
+            Ofinova Centro Empresarial, Modulo 0B30, Km 11.5 Carretera Masaya
+          </p>
+        </div>
+
+        <div class="footer-contact-element">
+          <img src="/img/icon/horario.svg" alt="Horario" />
+          <p>Lunes - Viernes 8:00 A.M. - 4:30 P.M.</p>
+        </div>
+
+        <div class="footer-contact-element">
+          <img src="/img/icon/telefono.svg" alt="Telefóno" />
+          <p>(505) 2546-6789</p>
+        </div>
+
+        <div class="footer-contact-element">
+          <img src="/img/icon/email.svg" alt="email" />
+          <p>contactodiferencial@dae.com</p>
+        </div>
+      </div>
+
+      <div class="footer-blog">
+        <h6>Suscribete a nuestro blog</h6>
+        <form action="" class="footer-blog">
+          <label for="#"
+            >No te pierdas de las últimas noticias y acontecer empresarial
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Correo electrónico"
+          />
+          <input class="btn-footer" type="submit" value="Suscribirse" />
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
