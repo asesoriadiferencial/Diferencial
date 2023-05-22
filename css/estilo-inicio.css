@@ -514,8 +514,20 @@ input.btn {
     background: #012C5F;
     border-radius: 10px;
     color: #FFFFFF;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21.88px;
     text-align: center;
     margin-left: 470px;
     margin-bottom: 0px;
     width: fit-content;
+
+}
+
+input.btn:hover {
+    background-color: #FFFFFF;
+    color: #012C5F;
+    cursor: pointer;
 }
