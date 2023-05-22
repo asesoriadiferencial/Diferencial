@@ -305,18 +305,99 @@
     </div>
     <!--BANNER DE CONTACTO-->
 
-    <!--FORMULARIO DE CONTACTO-->
-    <div class="container-formulario">
+    <!--CONTACTO-->
+    <div class="container-contacto">
       <div class="info-contacto">
+        <!--telefono-->
         <div class="info-box">
-          <img src="" alt="" />
-          <p>
-            Teléfono
-            <a href="">+505 2546-6789</a>
-          </p>
+          <div class="img-contact">
+            <img src="/img/icon/telefono.svg" alt="" />
+          </div>
+          <div>
+            <h3>Telefóno</h3>
+            <a href="tel:+50525466789">+505 2546-6789</a>
+          </div>
+        </div>
+
+        <!--correo-->
+        <div class="info-box">
+          <div class="img-contact">
+            <img src="/img/icon/email.svg" alt="" />
+          </div>
+
+          <div>
+            <h3>Correo</h3>
+            <a href="mailto:contactodiferencial@dae.com"
+              >contactodiferencial@dae.com</a
+            >
+          </div>
+        </div>
+
+        <!--direccción-->
+        <div class="info-box">
+          <div class="img-contact">
+            <img src="/img/icon/ubicacion.svg" alt="" />
+          </div>
+          <div>
+            <h3>telefóno</h3>
+            <a href="https://goo.gl/maps/6R22Xv6fV9azaRe6A"
+              >Ofinova Centro Empresarial, Modulo 0B30, Km 11.5 Carretera Masaya
+            </a>
+          </div>
         </div>
       </div>
+
+      <div class="container-formulario">
+        <h3>ENVIAR MENSAJE</h3>
+        <form action="">
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+          <input
+            type="email"
+            name="correo"
+            id="correo"
+            placeholder="Correo electrónico"
+          />
+          <input
+            type="tel"
+            name="telefono"
+            id="telefono"
+            placeholder="Teléfono"
+          />
+          <select id="servicios-cmb" name="servicios-cmb" title="servicio-cmb">
+            <option value="" disabled selected hidden>
+              Selecciona una opción
+            </option>
+            <option value="consulta-general">Consulta general</option>
+            <option value="planificacion-estrategica">
+              Planificación estratégica
+            </option>
+            <option value="marketing-digital">Marketing digital</option>
+            <option value="reingenieria-procesos">
+              Reingenieria de procesos
+            </option>
+            <option value="consultoria-financiera">
+              Consultoría financiera
+            </option>
+            <option value="analisis-competencia">
+              Análisis de competencia
+            </option>
+            <option value="consultoria-recursos-humanos">
+              Consultoría de recursos humanos
+            </option>
+          </select>
+          <textarea
+            name="mensake"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Escribir mensaje"
+          ></textarea>
+          <input class="btn" type="submit" value="Enviar Mensaje"  />
+        </form>
+      </div>
     </div>
+    <!-- CONTACTO -->
+
 
     <script src="/js/inicio.js"></script>
   </body>
