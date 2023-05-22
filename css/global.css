@@ -41,6 +41,11 @@ a {
     text-decoration: none;
 }
 
+.link-sin-decoracion{
+    text-decoration: none; /* Quita la decoración de los enlaces */
+    color: inherit; /* Hereda el color del texto del contenedor padre */
+}
+
 button:hover{
     cursor: pointer;
 }

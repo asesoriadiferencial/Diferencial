@@ -8,6 +8,7 @@ $(document).ready(function() {
       slidesToShow: 4, // Número de imágenes visibles a la vez
       slidesToScroll: 1, // Número de imágenes que se desplazan por vez
       autoplay: true, // Activar el desplazamiento automático
+      adaptiveHeight: true,
       autoplaySpeed: 900 // Intervalo de tiempo en milisegundos entre cada movimiento
     });
   });
