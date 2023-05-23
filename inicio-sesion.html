@@ -19,55 +19,58 @@
     <!-- #region:Links-->
     <link rel="icon" href="/img/diferencial/logo.ico" />
     <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/estilo-inicio.css" />
+    <link rel="stylesheet" href="/css/cabecera.css" />
+    <link rel="stylesheet" href="/css/log-sing-in.css" />
     <!-- #endregion: Links -->
-    <title>DIFERENCIAL</title>
+    <title>Diferencial: Asesoría Empresarial</title>
   </head>
 
   <body>
-    <!--Logo-->
-    <div style="display: flex; text-align: left">
-      <img
-        src="/Media/Images/Coorporativa/Logo-Nombre.png"
-        alt="Logo DIFERENCIAL"
-        width="200"
-        height="48"
-      />
-    </div>
+    <!--CABECERA-->
+    <header class="cabecera">
+      <a href="/index.html" class="cabecera-logo">
+        <img src="/img/diferencial/logo-nombre.png" alt="Logo" />
+      </a>
+    </header>
+    <!--CABEBCERA-->
 
-    <!--Contenido-->
-    <div>
+    <!--CONTENIDO-->
+    <div class="container">
       <h1>Iniciar sesión</h1>
-      <button>Continuar con Google</button>
-      <br />
-      <br />
-      <button>Contiuar con Facebook</button>
-      <br />
-      <br />
-      <form action="">
+      <button>
+        <img src="/img/icon/google.svg" alt="" />
+        Continuar con Google
+      </button>
+
+      <button>
+        <img src="/img/icon/fb-color2.png" alt="" />
+        Contiuar con Facebook
+      </button>
+
+      <hr />
+
+      <form class="formulario" action="">
         <label for="">Correo electrónico</label>
-        <br />
         <input type="email" placeholder="Ingresa su correo electrónico" />
-        <br /><br />
         <label>Contraseña</label>
-        <br />
         <input type="password" placeholder="Ingresa tu contraseña" />
-        <br /><br />
-        <input type="button" value="Continuar con mi correo" />
+        <input class="btn-form" type="button" value="Continuar con mi correo" />
       </form>
-      <br />
-      <small><a href="">¿Olvidaste tu contraseña?</a></small>
-      <br />
-      <small>
-        Al continuar con Google, Facebook o tu email , aceptas los
-        <br />
-        términos de servicio y la Política de privacidad de DIFERENCIAL.
-      </small>
-      <br />
-      <br />
-      <small
-        >¿No tienes cuenta? <a href="/HTML/registro.html">Registrate</a></small
-      >
+
+      <div class="politicas">
+        <small>
+          <a href="">¿Olvidaste tu contraseña?</a>
+        </small>
+
+        <small>
+          Al continuar con Google, Facebook o tu email , aceptas los términos de
+          servicio y la Política de privacidad de DIFERENCIAL.
+        </small>
+
+        <small>
+          <a href="/registro.html">¿No tienes cuenta? Registrate</a>
+        </small>
+      </div>
     </div>
   </body>
 </html>
