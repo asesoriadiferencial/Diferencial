@@ -17,260 +17,290 @@
     />
     <!-- #endregion:meta -->
     <!-- #region:Links-->
-    <link rel="icon" href="/Media/Images/Coorporativa/Logo.ico" />
-    <link rel="stylesheet" href="/CSS/global.css" />
-    <link rel="stylesheet" href="/CSS/estilo-inicio.css" />
+    <link rel="icon" href="/img/diferencial/logo.ico" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/cabecera.css" />
+    <link rel="stylesheet" href="/css/pie-pagina.css" />
+    <link rel="stylesheet" href="/css/estilo-nosotros.css" />
     <!-- #endregion: Links -->
-    <title>DIFERENCIAL</title>
+    <title>Diferencial: Asesoría Empresarial</title>
   </head>
   <body>
-    <header>
-      <div>
-        <img src="/Media/Images/Coorporativa/Logo-Nombre.png" alt="Logo DIFERENCIAL" width="200" height="48" />
-      </div>
-  
+    <!--CABECERA-->
+    <header class="cabecera">
+      <a href="/index.html" class="cabecera-logo">
+        <img src="/img/diferencial/logo-nombre.png" alt="Logo" />
+      </a>
+
       <nav class="cabecera-menu">
         <ul>
           <li><a href="/index.html">Inicio</a></li>
-          <li><a href="/HTML/nosotros.html">Nosotros</a></li>
-          <li><a href="/HTML/servicios.html">Servicios</a>
+          <li><a href="/nosotros.html">Nosotros</a></li>
+
+          <li class="submenu">
+            <a href="/servicios.html">Servicios</a>
             <ul>
               <li>
-                <a href="/HTML/PaginaServicio/planificacion-estrategica.html">Planificación estratégica</a>
+                <a href="/servicio/planificacion-estrategica.html"
+                  >Planificación estratégica</a
+                >
               </li>
               <li>
-                <a href="/HTML/PaginaServicio/marketing-digital.html">Marketing Digital</a>
+                <a href="/servicio/marketing-digital.html">Marketing Digital</a>
               </li>
               <li>
-                <a href="/HTML/PaginaServicio/optimizacion-procesos.html">Optimización de procesos</a>
+                <a href="/servicio/optimizacion-procesos.html"
+                  >Optimización de procesos</a
+                >
               </li>
               <li>
-                <a href="/HTML/PaginaServicio/consultoria-financiera.html">Consultoría financiera</a>
+                <a href="/servicio/consultoria-financiera.html"
+                  >Consultoría financiera</a
+                >
               </li>
               <li>
-                <a href="/HTML/PaginaServicio/analisis-competencia.html">Análisis de competencia</a>
+                <a href="/servicio/analisis-competencia.html"
+                  >Análisis de competencia</a
+                >
               </li>
               <li>
-                <a href="/HTML/PaginaServicio/consultoria-recursos-humanos.html">Consultoría de recursos humanos</a>
+                <a href="/servicio/consultoria-recursos-humanos.html"
+                  >Consultoría de recursos humanos</a
+                >
               </li>
               <li>
-                <a href="/HTML/planes.html">Planes</a>
+                <a href="/planes.html">Planes</a>
               </li>
             </ul>
           </li>
-          <li><a href="/HTML/blog.html">Blog</a>
+
+          <li class="submenu">
+            <a href="/blog.html">Blog</a>
             <ul>
-              <li><a href="/HTML/blog.html">Tendencias del mercado</a></li>
-              <li><a href="/HTML/blog.html">Consejos para empresas</a></li>
-              <li><a href="/HTML/blog.html">Estretegias de crecimiento</a></li>
-              <li><a href="/HTML/blog.html">Finanzas y contabilidad</a></li>
+              <li><a href="/blog.html">Tendencias del mercado</a></li>
+              <li><a href="/blog.html">Consejos para empresas</a></li>
+              <li><a href="/blog.html">Estretegias de crecimiento</a></li>
+              <li><a href="/blog.html">Finanzas y contabilidad</a></li>
             </ul>
           </li>
-          <li><a href="/HTML/contacto.html">Contacto</a></li>
+
+          <li><a href="/contacto.html">Contacto</a></li>
         </ul>
       </nav>
-  
-      <nav class="cabecera-opciones">
-        <ul>
-          <li>
-            <input type="text" name="busqueda" id="busqueda" />
-            <img src="/Media/Images/Iconos/busqueda.svg" alt="Buscar" />
-          </li>
-          <li>
-            <a href="/HTML/Facturación.html">
-              <img src="/Media/Images/Iconos/facturacion.svg" alt="Facturación" />
-            </a>
-          </li>
-          <li><a href="/HTML/inicio-sesion.html">Iniciar sesión</a></li>
-        </ul>
-      </nav>
+
+      <div class="cabecera-acciones">
+        <div class="cabecera-acciones__busqueda">
+          <img
+            src="/img/icon/busqueda.svg"
+            alt="Buscar"
+            class="icon-busqueda"
+          />
+        </div>
+
+        <a href="/facturacion.html">
+          <img
+            src="/img/icon/facturacion.svg"
+            alt="Facturación"
+            class="icon-facturacion"
+          />
+        </a>
+
+        <a href="/inicio-sesion.html">
+          <button class="btn-login">Iniciar sesión</button>
+        </a>
+      </div>
     </header>
+    <!--CABEBCERA-->
 
-    <!-- banner inicial -->
-    <div>
-      <h2>Nosotros</h2>
-      <p>
-        Somos una empresa de asesoría empresarial dedicada a brindar soluciones
-        efectivas y personalizadas para el crecimiento y éxito de su negocio.
-        Nuestro equipo de consultores altamente capacitados cuenta con una
-        amplia experiencia que nos permite brindar un servicio integral.
-      </p>
-      <img src="/Media/Images/Recursos/Imagen2.png" alt="" width="550" />
-      <br />
-      <button>Contactanos</button>
+    <!--BANNER INICIAL-->
+    <div class="banner-inicial">
+      <div class="banner-info">
+        <h1>Nosotros</h1>
+        <p>
+          Somos una empresa de asesoría empresarial dedicada a brindar
+          soluciones efectivas y personalizadas para el crecimiento y éxito de
+          su negocio. Nuestro equipo de consultores altamente capacitados cuenta
+          con una amplia experiencia que nos permite brindar un servicio
+          integral.
+        </p>
+        <button>Contáctanos</button>
+      </div>
+      <div class="banner-img">
+        <img src="/img/nosotros1.png" alt="" />
+      </div>
     </div>
+    <!--BANNER INICIAL-->
 
-    <br />
-    <!--mision-->
-    <div>
-      <img src="/Media/Images/Iconos/mision.svg" alt="" />
-      <strong>MISIÓN</strong>
-      <br />
-      <p style="display: inline">
-        La misión de Diferencial es proporcionar asesoría empresarial
-        personalizada y efectiva a empresas de todos los tamaños y sectores, con
-        el objetivo de ayudarlas a alcanzar su máximo potencial.
-      </p>
+    <!--DECLARACIÓN ESTRATEGICA-->
+    <div class="container-declaracion">
+      <!--mision-->
+      <div class="mision">
+        <strong><img src="/img/icon/mision.svg" alt="" />MISIÓN</strong>
+        <p>
+          La misión de Diferencial es proporcionar asesoría empresarial
+          personalizada y efectiva a empresas de todos los tamaños y sectores,
+          con el objetivo de ayudarlas a alcanzar su máximo potencial.
+        </p>
+      </div>
+      <!--vision-->
+      <div class="vision">
+        <strong><img src="/img/icon/vision.svg" alt="" /> VISIÓN </strong>
+        <p>
+          Ser la empresa líder de asesoría empresarial en el mercado,
+          manteniéndose actualizada en las últimas tendencias y desarrollos del
+          mercado, innovando y mejorando constantemente la oferta de servicios.
+        </p>
+      </div>
     </div>
+    <!--DECLARACIÓN ESTRATEGICA-->
 
-    <br />
-    <!--vision-->
-    <div>
-      <img src="/Media/Images/Iconos/vision.svg" alt="" />
-      <strong>VISIÓN</strong>
-      <br />
-      <p style="display: inline">
-        Ser la empresa líder de asesoría empresarial en el mercado,
-        manteniéndose actualizada en las últimas tendencias y desarrollos del
-        mercado, innovando y mejorando constantemente la oferta de servicios.
-      </p>
-    </div>
-
-    <!--Historia-->
-    <br />
-    <div>
-      <h2>NUESTRA HISTORIA</h2>
-      <p>
-        La historia de DIFERENCIAL comienza hace más de 20 años, cuando un grupo
-        de expertos en finanzas decidió unir sus conocimientos y experiencia
-        para brindar un servicio de asesoría financiera personalizado y de alta
-        calidad a sus clientes. Con el paso del tiempo, DIFERENCIAL se ha
-        consolidado como una empresa líder en el sector, gracias a su enfoque en
-        la excelencia en el servicio al cliente y su capacidad para adaptarse a
-        las necesidades y demandas de un mercado financiero en constante
-        evolución.
-      </p>
-      <img src="/Media/Images/Recursos/Imagen3.png" alt="" width="550" />
+    <!--HISTORIA-->
+    <div class="historia">
+      <div class="historia-texto">
+        <h2>NUESTRA HISTORIA</h2>
+        <p>
+          La historia de DIFERENCIAL comienza hace más de 20 años, cuando un
+          grupo de expertos en finanzas decidió unir sus conocimientos y
+          experiencia para brindar un servicio de asesoría financiera
+          personalizado y de alta calidad a sus clientes.
+          <br />
+          Con el paso del tiempo, DIFERENCIAL se ha consolidado como una empresa
+          líder en el sector, gracias a su enfoque en la excelencia en el
+          servicio al cliente y su capacidad para adaptarse a las necesidades y
+          demandas de un mercado financiero en constante evolución.
+        </p>
+      </div>
+      <img src="/img/nosotros2.png" alt="" />
     </div>
 
     <!--Equipo de trabajo-->
-    <br />
-    <img src="/Media/Images/Recursos/ConoceEquipo.png" alt="" />
-    <section>
-      <div style="margin: 20px; display: inline-block;">
-        <img src="/Media/Images/Recursos/Asesor1.png" alt="" width="256px" />
+    <img class="img-titulo" src="/img/conoce-equipo.png" alt="" />
+
+    <section class="equipo">
+      <div class="equipo-miembro" >
+        <img src="/img/asesor1.png" alt="" width="256px" />
         <h2>Mike Durán</h2>
         <h4>Asesor Financiero</h4>
-        <img src="/Media/Images/Iconos/FB.svg" alt="" />
-        <img src="/Media/Images/Iconos/ig.svg" alt="" />
-        <img src="/Media/Images/Iconos/linkein.svg" alt="" />
+        <div class="equipo-miembro-redes">
+          <a href=""><img src="/img/icon/fb.svg" alt="" /></a>
+          <a href=""><img src="/img/icon/ig.svg" alt="" /></a>
+          <a href=""><img src="/img/icon/linkein.svg" alt="" /></a>
+        </div>
       </div>
 
-      <div style="margin: 20px; display: inline-block;">
-        <img src="/Media/Images/Recursos/Asesor2.png" alt="" width="256px" />
-        <h2>John Reyes</h2>
+      <div class="equipo-miembro">
+        <img src="/img/asesor2.png" alt="" width="256px" />
+        <h2>Mike Durán</h2>
         <h4>Asesor Financiero</h4>
-        <img src="/Media/Images/Iconos/FB.svg" alt="" />
-        <img src="/Media/Images/Iconos/ig.svg" alt="" />
-        <img src="/Media/Images/Iconos/linkein.svg" alt="" />
+        <div class="equipo-miembro-redes">
+          <a href=""><img src="/img/icon/fb.svg" alt="" /></a>
+          <a href=""><img src="/img/icon/ig.svg" alt="" /></a>
+          <a href=""><img src="/img/icon/linkein.svg" alt="" /></a>
+        </div>
       </div>
 
-      <div style="margin: 20px; display: inline-block;">
-        <img src="/Media/Images/Recursos/asesor3.png" alt="" width="256px" />
-        <h2>Andrea Jarquín</h2>
-        <h4>Asesora Financiero</h4>
-        <img src="/Media/Images/Iconos/FB.svg" alt="" />
-        <img src="/Media/Images/Iconos/ig.svg" alt="" />
-        <img src="/Media/Images/Iconos/linkein.svg" alt="" />
-      </div>
-
-      <div style="margin: 20px; display: inline-block;">
-        <img src="/Media/Images/Recursos/asesor4.png" alt="" width="256px" />
-        <h2>José Alonso</h2>
+      <div class="equipo-miembro">
+        <img src="/img/asesor3.png" alt="" width="256px" />
+        <h2>Mike Durán</h2>
         <h4>Asesor Financiero</h4>
-        <img src="/Media/Images/Iconos/FB.svg" alt="" />
-        <img src="/Media/Images/Iconos/ig.svg" alt="" />
-        <img src="/Media/Images/Iconos/linkein.svg" alt="" />
+        <div class="equipo-miembro-redes">
+          <a href=""><img src="/img/icon/fb.svg" alt="" /></a>
+          <a href=""><img src="/img/icon/ig.svg" alt="" /></a>
+          <a href=""><img src="/img/icon/linkein.svg" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="equipo-miembro">
+        <img src="/img/asesor4.png" alt="" width="256px" />
+        <h2>Mike Durán</h2>
+        <h4>Asesor Financiero</h4>
+        <div class="equipo-miembro-redes">
+          <a href=""><img src="/img/icon/fb.svg" alt="" /></a>
+          <a href=""><img src="/img/icon/ig.svg" alt="" /></a>
+          <a href=""><img src="/img/icon/linkein.svg" alt="" /></a>
+        </div>
       </div>
     </section>
 
-    <br />
-    <!--Pie de página-->
-    <footer class="pie-pagina">
-      <div>
-        <img
-          src="/Media/Images/Coorporativa/Logo-Nombre.png"
-          alt="logo DIFERENCIAL"
-          width="200px"
-          height="auto"
-        />
+    <!--PIE DE PAGINA-->
+    <footer class="footer-container">
+      <div class="footer-diferencial">
+        <img src="/img/diferencial/logo-nombre.png" alt="DIFERENCIAL" />
         <p>
           Ofrecemos asesoría empresarial personalizada a empresas de todos los
           tamaños y sectores, con el objetivo de ayudarlas a alcanzar su máximo
           potencial.
         </p>
-        <div class="redes">
-          <a href=""
-            ><img src="/Media/Images/Iconos/FB.svg" alt="Facebook"
+        <div class="socials">
+          <a href="https://www.facebook.com/asesoriadiferencial" target="_blank"
+            ><img src="/img/icon/fb.svg" alt="FB"
           /></a>
-          <a href=""
-            ><img src="/Media/Images/Iconos/ig.svg" alt="Instragram"
+          <a
+            href="https://www.instagram.com/asesoriadiferencial"
+            target="_blank"
+            ><img src="/img/icon/ig.svg" alt="IG"
           /></a>
-          <a href=""
-            ><img src="/Media/Images/Iconos/linkein.svg" alt="LinkedIn"
+          <a
+            href="https://www.linkedin.com/company/asesoriadiferencial/"
+            target="_blank"
+            ><img src="/img/icon/linkein.svg" alt="in"
           /></a>
         </div>
       </div>
-      <div class="menu-pie-pagina">
-        <strong>Menú</strong>
+
+      <div class="footer-opciones">
+        <p>Menú</p>
         <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Nosotros</a></li>
-          <li><a href="">Servicios</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contacto</a></li>
+          <a href="/index.html"><li>Inicio</li></a>
+          <a href="/nosotros.html"><li>Nosotros</li></a>
+          <a href="/servicio/"><li>Servicios</li></a>
+          <a href="/blog.html"><li>Blog</li></a>
+          <a href="/contacto.html"><li>Contacto</li></a>
         </ul>
       </div>
 
-      <div class="informacion-contacto-pp">
-        <strong>Información de contacto</strong>
-        <br />
-        <img
-          src="/Media/Images/Iconos/ubicacion.svg"
-          alt="Ubicación"
-          style="display: inline"
-        />
-        <p style="display: inline">
-          Ofinova Centro Empresarial, Modulo 0B30, Km 11.5 Carretera Masaya
-        </p>
-        <br /><br />
-        <img
-          src="/Media/Images/Iconos/horario.svg"
-          alt="Horarios de atención"
-          style="display: inline"
-        />
-        <p style="display: inline">Lunes - Viernes 8:00 A.M. - 4:30 P.M.</p>
-        <br /><br />
-        <img
-          src="/Media/Images/Iconos/telefono.svg"
-          alt="Teléfono"
-          style="display: inline"
-        />
-        <p style="display: inline">(505) 2546-6789</p>
-        <br /><br />
-        <img
-          src="/Media/Images/Iconos/email.svg"
-          alt="Correo"
-          style="display: inline"
-        />
-        <p style="display: inline">contactodiferencial@dae.com</p>
+      <div class="footer-contact">
+        <h6>Información de contacto</h6>
+
+        <div class="footer-contact-element">
+          <img src="/img/icon/ubicacion.svg" alt="Ubicación" />
+          <p>
+            Ofinova Centro Empresarial, Modulo 0B30, Km 11.5 Carretera Masaya
+          </p>
+        </div>
+
+        <div class="footer-contact-element">
+          <img src="/img/icon/horario.svg" alt="Horario" />
+          <p>Lunes - Viernes 8:00 A.M. - 4:30 P.M.</p>
+        </div>
+
+        <div class="footer-contact-element">
+          <img src="/img/icon/telefono.svg" alt="Telefóno" />
+          <p>(505) 2546-6789</p>
+        </div>
+
+        <div class="footer-contact-element">
+          <img src="/img/icon/email.svg" alt="email" />
+          <p>contactodiferencial@dae.com</p>
+        </div>
       </div>
 
-      <br /><br />
-
-      <div class="suscripcion-blog">
-        <strong>Suscribete a nuestro blog</strong>
-        <p>No te pierdas de las últimas noticias y acontecer empresarial</p>
-        <form action="HTML/blog.html" method="post">
+      <div class="footer-blog">
+        <h6>Suscribete a nuestro blog</h6>
+        <form action="" class="footer-blog">
+          <label for="#"
+            >No te pierdas de las últimas noticias y acontecer empresarial
+          </label>
           <input
             type="email"
-            name="email-suscripcion"
-            id="email-suscripcion"
+            name="email"
+            id="email"
             placeholder="Correo electrónico"
           />
-          <button type="submit" class="boton">Suscribirse</button>
+          <input class="btn-footer" type="submit" value="Suscribirse" />
         </form>
       </div>
     </footer>
+    <!--PIE DE PAGIAN-->
   </body>
 </html>
