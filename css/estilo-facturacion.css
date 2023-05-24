@@ -1,0 +1,90 @@
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.tabla {
+    width: calc(100% - 180px);
+    /* Ancho de la pantalla menos los márgenes laterales */
+    margin: 0 90px;
+    /* Márgenes laterales de 90px */
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.tabla th,
+.tabla td {
+    padding: 10px;
+    /* Espacio interno en cada celda */
+    border: 1px solid #01387B;
+    /* Líneas de la tabla y encabezados */
+}
+
+.tabla th {
+    background-color: #01387B;
+    /* Color de fondo del encabezado */
+    color: #FFFFFF;
+    /* Color del texto del encabezado */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+.tabla td {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.tabla.segunda-tabla {
+    margin-top: 10px; /* Espacio entre las dos tablas */
+  }
+  
+  .tabla.segunda-tabla td {
+    padding: 10px; /* Espacio interno en cada celda */
+    border: 1px solid #01387B; /* Líneas de la tabla */
+  }
+  
+  form {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+  
+  h2 {
+    color: #012C5F;
+  }
+  
+  .campo {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  button {
+    background-color: #012C5F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+  }
+  
