@@ -93,19 +93,6 @@
 }
 
 
-#PE:before {
-    content: "";
-    background-color: #E46732;
-    width: 8px;
-    height: 50px;
-    display: inline-block;
-    margin-right: 5px;
-}
-
-#PE {
-    font-weight: bold;
-}
-
 .lista-servicios ul li a:hover {
     font-weight: bold;
 }
@@ -137,19 +124,20 @@
     color: #000000;
 }
 
-.contenido strong{
-    margin-right: 0px; /* Ajusta el margen derecho según tus necesidades */
+.contenido strong {
+    margin-right: 0px;
+    /* Ajusta el margen derecho según tus necesidades */
 
 }
 
 
-.contenido ol{
+.contenido ol {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.contenido ul{
+.contenido ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -166,24 +154,15 @@
     color: #000000;
 }
 
-#caso1{
-    width: 125px;
-    height: auto;
-}
-
-#caso2{
-    width: 250px;
-}
-
-.contenido a{
+.contenido a {
     font-weight: bolder;
 }
 
-.contenido a:hover{
+.contenido a:hover {
     color: #E46732;
 }
 
-.contenedor-casos{
+.contenedor-casos {
     width: 100%;
     padding: 0px 50px;
     overflow: hidden;
