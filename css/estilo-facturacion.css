@@ -1,90 +1,233 @@
 h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
 }
 
 .tabla {
-    width: calc(100% - 180px);
-    /* Ancho de la pantalla menos los márgenes laterales */
-    margin: 0 90px;
-    /* Márgenes laterales de 90px */
-    border-collapse: collapse;
-    margin-bottom: 10px;
+  width: calc(100% - 180px);
+  /* Ancho de la pantalla menos los márgenes laterales */
+  margin: 0 90px;
+  /* Márgenes laterales de 90px */
+  border-collapse: collapse;
+  margin-bottom: 10px;
 }
 
 .tabla th,
 .tabla td {
-    padding: 10px;
-    /* Espacio interno en cada celda */
-    border: 1px solid #01387B;
-    /* Líneas de la tabla y encabezados */
+  padding: 10px;
+  /* Espacio interno en cada celda */
+  border: 1px solid #01387B;
+  /* Líneas de la tabla y encabezados */
 }
 
 .tabla th {
-    background-color: #01387B;
-    /* Color de fondo del encabezado */
-    color: #FFFFFF;
-    /* Color del texto del encabezado */
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
+  background-color: #01387B;
+  /* Color de fondo del encabezado */
+  color: #FFFFFF;
+  /* Color del texto del encabezado */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
 }
 
 .tabla td {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-    /* identical to box height, or 150% */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
 
-    text-align: center;
+  text-align: center;
 
-    color: #000000;
+  color: #000000;
 
 }
 
-.tabla.segunda-tabla {
-    margin-top: 10px; /* Espacio entre las dos tablas */
-  }
-  
-  .tabla.segunda-tabla td {
-    padding: 10px; /* Espacio interno en cada celda */
-    border: 1px solid #01387B; /* Líneas de la tabla */
-  }
-  
-  form {
-    text-align: center;
-    margin: 0 auto;
-    width: 50%;
-  }
-  
-  h2 {
-    color: #012C5F;
-  }
-  
-  .campo {
-    margin-bottom: 10px;
-  }
-  
-  label {
-    display: block;
-  }
-  
-  input[type="text"],
-  select {
-    width: 100%;
-    padding: 5px;
-  }
-  
-  button {
-    background-color: #012C5F;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-  }
-  
+.resumen-pago {
+  width: calc(100% - 180px);
+  /* Ancho de la pantalla menos los márgenes laterales */
+  padding: 0px 10px;
+  margin: 20px 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.descuento {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.descuento input[type="text"] {
+  width: 450px;
+  height: 45px;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 2px #012C5F;
+  font-size: 18px;
+}
+
+.descuento button {
+  background-color: #E46732;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  height: 45px;
+  border-radius: 10px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.descuento button:hover {
+  background-color: rgba(228, 103, 50, 0.9);
+  border: solid 1px #012C5F;
+}
+
+.resumen-pago-total {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: end;
+}
+
+.total-item {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: dashed 1px #012C5F;
+}
+
+.total-item p {
+  font-size: x-large;
+}
+
+.total-item .total {
+  font-weight: bold;
+}
+
+.total-item-titulo {
+  width: 150px;
+  text-align: right;
+}
+
+.forma-pago {
+  width: calc(100% - 500px);
+  /* Ancho de la pantalla menos los márgenes laterales */
+  height: 350px;
+  padding: 0px 10px;
+  margin: 30px 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.forma-pago h2 {
+  color: #012C5F;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27.34px;
+}
+
+.campo-tarjeta label,
+.campo-fecha label,
+.campo-csv label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 5px 0px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.campo-tarjeta input,
+.campo-fecha input,
+.campo-csv input {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+
+  padding: 5px 10px;
+}
+
+
+.forma-pago label p {
+  color: red;
+  font-weight: bolder;
+}
+
+.campo-tarjeta-inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.campo-tarjeta-inputs input {
+  width: 730px;
+}
+
+.campo-tarjeta-input img {
+  width: 42px;
+  height: 42px;
+}
+
+.container-fecha-csv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 195px;
+}
+
+.campo-csv a {
+  font-weight: bolder;
+  margin-left: 200px;
+}
+
+.forma-pago button {
+  background-color: #012C5F;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border-style: none;
+  padding: 10px 30px;
+  margin-left: 590px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.forma-pago button:hover{
+  color: #012C5F;
+  border: solid 2px #012C5F;
+  background-color: #FFFFFF;
+}
