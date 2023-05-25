@@ -17,304 +17,330 @@
     />
     <!-- #endregion:meta -->
     <!-- #region:Links-->
-    <link rel="icon" href="/Media/Images/Coorporativa/Logo.ico" />
-    <link rel="stylesheet" href="/CSS/global.css" />
-    <link rel="stylesheet" href="/CSS/estilo-inicio.css" />
+    <link rel="icon" href="/img/diferencial/logo.ico" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/cabecera.css" />
+    <link rel="stylesheet" href="/css/pie-pagina.css" />
+    <link rel="stylesheet" href="/css/estilo-servicio.css" />
     <!-- #endregion: Links -->
-    <title>DIFERENCIAL</title>
+    <title>Diferencial: Asesoría Empresarial</title>
   </head>
 
   <body>
-    <header>
-        <div>
-          <img src="/Media/Images/Coorporativa/Logo-Nombre.png" alt="Logo DIFERENCIAL" width="200" height="48" />
-        </div>
-    
-        <nav class="cabecera-menu">
-          <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/HTML/nosotros.html">Nosotros</a></li>
-            <li><a href="/HTML/servicios.html">Servicios</a>
-              <ul>
-                <li>
-                  <a href="/HTML/PaginaServicio/planificacion-estrategica.html">Planificación estratégica</a>
-                </li>
-                <li>
-                  <a href="/HTML/PaginaServicio/marketing-digital.html">Marketing Digital</a>
-                </li>
-                <li>
-                  <a href="/HTML/PaginaServicio/optimizacion-procesos.html">Optimización de procesos</a>
-                </li>
-                <li>
-                  <a href="/HTML/PaginaServicio/consultoria-financiera.html">Consultoría financiera</a>
-                </li>
-                <li>
-                  <a href="/HTML/PaginaServicio/analisis-competencia.html">Análisis de competencia</a>
-                </li>
-                <li>
-                  <a href="/HTML/PaginaServicio/consultoria-recursos-humanos.html">Consultoría de recursos humanos</a>
-                </li>
-                <li>
-                  <a href="/HTML/planes.html">Planes</a>
-                </li>
-              </ul>
-            </li>
-            <li><a href="/HTML/blog.html">Blog</a>
-              <ul>
-                <li><a href="/HTML/blog.html">Tendencias del mercado</a></li>
-                <li><a href="/HTML/blog.html">Consejos para empresas</a></li>
-                <li><a href="/HTML/blog.html">Estretegias de crecimiento</a></li>
-                <li><a href="/HTML/blog.html">Finanzas y contabilidad</a></li>
-              </ul>
-            </li>
-            <li><a href="/HTML/contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-    
-        <nav class="cabecera-opciones">
-          <ul>
-            <li>
-              <input type="text" name="busqueda" id="busqueda" />
-              <img src="/Media/Images/Iconos/busqueda.svg" alt="Buscar" />
-            </li>
-            <li>
-              <a href="/HTML/Facturación.html">
-                <img src="/Media/Images/Iconos/facturacion.svg" alt="Facturación" />
-              </a>
-            </li>
-            <li><a href="/HTML/inicio-sesion.html">Iniciar sesión</a></li>
-          </ul>
-        </nav>
-      </header>
+    <!--CABECERA-->
+    <header class="cabecera">
+      <a href="/index.html" class="cabecera-logo">
+        <img src="/img/diferencial/logo-nombre.png" alt="Logo" />
+      </a>
 
-    <!-- ENCABEZADO INICIAL-->
-    <section>
-      <div style="background-color: #012c5f; color: white">
-        <h1>OFERTAS ACTUALES</h1>
-      </div>
-      <p>
-        Conoce mas sobre nuestros servicios y no lo pienses dos veces para
-        ponerte en contacto con nosotros si tienes alguna duda.
-      </p>
-      <h2>SERVICIOS</h2>
-      <div>
+      <nav class="cabecera-menu">
         <ul>
-          <li><a href="">Planificacion estratégica</a></li>
-          <li><a href="">Marketing digital</a></li>
-          <li><a href="">Optimización de procesos</a></li>
-          <li><a href="">Consultoría financiera</a></li>
-          <li><a href="">Análisis de competencia</a></li>
-          <li><a href="">Consultoría de recursos humanos</a></li>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/nosotros.html">Nosotros</a></li>
+
+          <li class="submenu">
+            <a href="/servicios.html">Servicios</a>
+            <ul>
+              <li>
+                <a href="/servicio/planificacion-estrategica.html"
+                  >Planificación estratégica</a
+                >
+              </li>
+              <li>
+                <a href="/servicio/marketing-digital.html">Marketing Digital</a>
+              </li>
+              <li>
+                <a href="/servicio/optimizacion-procesos.html"
+                  >Reingeniería de procesos</a
+                >
+              </li>
+              <li>
+                <a href="/servicio/consultoria-financiera.html"
+                  >Consultoría financiera</a
+                >
+              </li>
+              <li>
+                <a href="/servicio/analisis-competencia.html"
+                  >Análisis de competencia</a
+                >
+              </li>
+              <li>
+                <a href="/servicio/consultoria-recursos-humanos.html"
+                  >Consultoría de recursos humanos</a
+                >
+              </li>
+              <li>
+                <a href="/planes.html">Planes</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="submenu">
+            <a href="/blog.html">Blog</a>
+            <ul>
+              <li><a href="/blog.html">Tendencias del mercado</a></li>
+              <li><a href="/blog.html">Consejos para empresas</a></li>
+              <li><a href="/blog.html">Estretegias de crecimiento</a></li>
+              <li><a href="/blog.html">Finanzas y contabilidad</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/contacto.html">Contacto</a></li>
         </ul>
+      </nav>
+
+      <div class="cabecera-acciones">
+        <div class="cabecera-acciones__busqueda">
+          <img
+            src="/img/icon/busqueda.svg"
+            alt="Buscar"
+            class="icon-busqueda"
+          />
+        </div>
+
+        <a href="/facturacion.html">
+          <img
+            src="/img/icon/facturacion.svg"
+            alt="Facturación"
+            class="icon-facturacion"
+          />
+        </a>
+
+        <a href="/inicio-sesion.html">
+          <button class="btn-login">Iniciar sesión</button>
+        </a>
       </div>
-    </section>
+    </header>
+    <!--CABEBCERA-->
 
-    <br />
+    <div class="container">
+      <!-- ENCABEZADO INICIAL-->
+      <section class="menu">
+        <div class="titulo">
+          <h1>OFERTAS ACTUALES</h1>
+        </div>
+        <p>
+          Conoce mas sobre nuestros servicios y no lo pienses dos veces para
+          ponerte en contacto con nosotros si tienes alguna duda.
+        </p>
+        <h2>SERVICIOS</h2>
+        <div class="lista-servicios">
+          <ul>
+            <li id="PE">
+              <a href="">Planificacion estratégica</a>
+            </li>
+            <li id="MD">
+              <a href="/servicio/marketing-digital.html">Marketing digital</a>
+            </li>
+            <li id="RP">
+              <a href="/servicio/optimizacion-procesos.html"
+                >Reingeniería de procesos</a
+              >
+            </li>
+            <li id="CF">
+              <a href="/servicio/consultoria-financiera.html"
+                >Consultoría financiera</a
+              >
+            </li>
+            <li id="AC">
+              <a href="/servicio/analisis-competencia.html"
+                >Análisis de competencia</a
+              >
+            </li>
+            <li id="CRH">
+              <a href="/servicio/consultoria-recursos-humanos.html"
+                >Consultoría de recursos humanos</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <!--Cuerpo del desarrollo-->
-    <div>
+      <!--Cuerpo del desarrollo-->
+      <div class="contenido">
         <!--Titulo del servicio-->
-      <h2>PLANEACIÓN ESTRATÉGICA</h2>
-         <!--Descripción-->
-      <h3 style="margin: 15px">DESCRIPCIÓN</h3>
+        <h2>PLANEACIÓN ESTRATÉGICA</h2>
+        <hr>
+        <!--Descripción-->
+        <h3>DESCRIPCIÓN</h3>
 
-      <p style="margin: 20px">
-        En nuestra asesoría empresarial ofrecemos servicios de planeación
-        estratégica para ayudar a las empresas a alcanzar sus objetivos y crecer
-        de manera sostenible. Nuestro equipo de expertos en estrategia
-        empresarial se encarga de diseñar y ejecutar planes personalizados para
-        cada cliente, teniendo en cuenta sus necesidades, objetivos y recursos
-        disponibles.
-      </p>
-
-       <!--Proceso de trabajo-->
-      <h3 style="margin: 15px">PROCESO DE TRABAJO</h3>
-
-      <p style="margin: 20px">
-        Nuestro proceso de trabajo en la planeación estratégica se divide en
-        cuatro etapas:
-      </p>
-
-      <ol start="1">
-        <li><strong>Análisis de la situación actual:</strong></li>
         <p>
-          Realizamos una evaluación detallada de la empresa y su entorno para
-          identificar fortalezas, debilidades, oportunidades y amenazas.
+          En nuestra asesoría empresarial ofrecemos servicios de planeación
+          estratégica para ayudar a las empresas a alcanzar sus objetivos y
+          crecer de manera sostenible. Nuestro equipo de expertos en estrategia
+          empresarial se encarga de diseñar y ejecutar planes personalizados
+          para cada cliente, teniendo en cuenta sus necesidades, objetivos y
+          recursos disponibles.
         </p>
 
-        <li><strong> Definición de objetivos y estrategias:</strong></li>
+        <hr>
+        <!--Proceso de trabajo-->
+        <h3>PROCESO DE TRABAJO</h3>
+
         <p>
-          En base al análisis previo, trabajamos con el cliente para definir
-          objetivos claros y estrategias efectivas para alcanzarlos.
+          Nuestro proceso de trabajo en la planeación estratégica se divide en
+          cuatro etapas:
         </p>
 
-        <li><strong> Planificación y ejecución:</strong></li>
+        <ol start="1">
+          <li>
+            <b>Análisis de la situación actual:</b>
+            Realizamos una evaluación detallada de la empresa y su entorno para
+            identificar fortalezas, debilidades, oportunidades y amenazas.
+          </li>
+
+          <li>
+            <strong> Definición de objetivos y estrategias:</strong>
+            En base al análisis previo, trabajamos con el cliente para definir
+            objetivos claros y estrategias efectivas para alcanzarlos.
+          </li>
+
+          <li>
+            <strong> Planificación y ejecución:</strong>
+            Diseñamos un plan de acción detallado y lo ejecutamos en
+            colaboración con el cliente, asegurándonos de que se cumplan los
+            plazos y se alcancen los objetivos previstos.
+          </li>
+
+          <li>
+            <strong>Seguimiento y evaluación:</strong>
+            Realizamos un seguimiento constante del plan de acción y evaluamos
+            los resultados obtenidos para realizar ajustes y mejoras en caso
+            necesario.
+          </li>
+        </ol>
+        <hr>
+        <!--Casos de éxito-->
+        <h3>CASOS DE ÉXITO Y TESTIMONIOS</h3>
+
+        <ul class="caso-exito">
+          <li>
+            <b>
+              Creación de una línea nueva de productos a Café OX quien pudo
+              recuperar su inversión y obtener ganancias en menos de 6 meses</b
+            >
+          </li>
+
+          <div class="contenedor-casos">
+            <p>
+              "Gracias a la asesoría en planeación estratégica de esta empresa,
+              pudimos expandir nuestro negocio y aumentar nuestras ganancias en
+              un corto período de tiempo. Muy recomendable."
+              <strong>Ana Rodrigues, Directoria de Café OX</strong>
+            </p>
+            <img id="caso1" src="/img/caso-exito-pe.png" alt="CAFE OX" />
+          </div>
+
+          <li>
+            <b>
+              La implementación de un plan de expansión para SIMAN que llevó a
+              un aumento del 30% en las ventas en el primer año.
+            </b>
+          </li>
+
+          <div class="contenedor-casos">
+            <p>
+              "El equipo de esta asesoría tiene una habilidad única para
+              identificar oportunidades de crecimiento y diseñar estrategias
+              efectivas para aprovecharlas. Excelente servicio."
+              <strong>Juan Pérez, Subdirector de SIMAN.</strong>
+            </p>
+            <img id="caso2" src="/img/caso-exito-pe-2.jpg" alt="Logo SIMAN" />
+          </div>
+        </ul>
+        <hr>
+        <h3>PRECIOS Y PLANES</h3>
         <p>
-          Diseñamos un plan de acción detallado y lo ejecutamos en colaboración
-          con el cliente, asegurándonos de que se cumplan los plazos y se
-          alcancen los objetivos previstos.
+          Los precios varían según la complejidad del proyecto y el nivel de
+          involucramiento de nuestro equipo. Nuestro precio base para proyectos
+          básicos es de $300.00. También ofrecemos diferentes
+          <a href="/HTML/planes.html">planes de servicio</a> para que tus ideas
+          o proyectos tengan una asesoramiento integral. Para obtener más
+          información sobre nuestros precios y planes,
+          <a href="/HTML/contacto.html">contáctanos</a>
         </p>
-
-        <li><strong>Seguimiento y evaluación:</strong></li>
-        <p>
-          Realizamos un seguimiento constante del plan de acción y evaluamos los
-          resultados obtenidos para realizar ajustes y mejoras en caso
-          necesario.
-        </p>
-      </ol>
-
-       <!--Casos de éxito-->
-      <h3 style="margin: 15px">CASOS DE ÉXITO Y TESTIMONIOS</h3>
-
-      <ul>
-        <li>
-          Creación de una línea nueva de productos a Café OX quien pudo
-          recuperar su inversión y obtener ganancias en menos de 6 meses
-        </li>
-        <p
-          style="
-            margin: 20px;
-            text-align: justify;
-            font-style: italic;
-            font-size: medium;
-          "
-        >
-          "Gracias a la asesoría en planeación estratégica de esta empresa,
-          pudimos expandir nuestro negocio y aumentar nuestras ganancias en un
-          corto período de tiempo. Muy recomendable."
-          <br />
-          <strong>Ana Rodrigues, Directoria de Café OX</strong>
-        </p>
-
-        <img
-          src="/Media/Images/Recursos/imagen4.png"
-          alt=""
-          style="display: inline; height: 200px"
-        />
-
-        <li>
-          La implementación de un plan de expansión para SIMAN que llevó a un
-          aumento del 30% en las ventas en el primer año.
-        </li>
-        <p
-          style="
-            margin: 20px;
-            text-align: justify;
-            font-style: italic;
-            font-size: medium;
-          "
-        >
-          "El equipo de esta asesoría tiene una habilidad única para identificar
-          oportunidades de crecimiento y diseñar estrategias efectivas para
-          aprovecharlas. Excelente servicio."
-
-          <br />
-          <strong>Juan Pérez, Subdirector de SIMAN.</strong>
-        </p>
-
-        <img
-          src="/Media/Images/Clientes/logo_siman.png"
-          alt=""
-          style="display: inline; height: 50px"
-        />
-      </ul>
-
-      <h3>PRECIOS Y PLANES</h3>
-      <p>Los precios varían según la complejidad del proyecto y el nivel de involucramiento de nuestro equipo.  Nuestro precio base para proyectos básicos es de $300.00.
-        <br><br>
-        También ofrecemos diferentes <a href="/HTML/planes.html">planes de servicio</a>  para que tus ideas o proyectos tengan una asesoramiento integral.
-        <br><br>
-        Para obtener más información sobre nuestros precios y planes, <a href="/HTML/contacto.html">contáctanos</a> </p>
-
+      </div>
     </div>
 
-    <br />
-    <!--Pie de página-->
-    <footer class="pie-pagina">
-      <div>
-        <img
-          src="/Media/Images/Coorporativa/Logo-Nombre.png"
-          alt="logo DIFERENCIAL"
-          width="200px"
-          height="auto"
-        />
+    <!--PIE DE PAGINA-->
+    <footer class="footer-container">
+      <div class="footer-diferencial">
+        <img src="/img/diferencial/logo-nombre.png" alt="DIFERENCIAL" />
         <p>
           Ofrecemos asesoría empresarial personalizada a empresas de todos los
           tamaños y sectores, con el objetivo de ayudarlas a alcanzar su máximo
           potencial.
         </p>
-        <div class="redes">
-          <a href=""
-            ><img src="/Media/Images/Iconos/FB.svg" alt="Facebook"
+        <div class="socials">
+          <a href="https://www.facebook.com/asesoriadiferencial" target="_blank"
+            ><img src="/img/icon/fb.svg" alt="FB"
           /></a>
-          <a href=""
-            ><img src="/Media/Images/Iconos/ig.svg" alt="Instragram"
+          <a
+            href="https://www.instagram.com/asesoriadiferencial"
+            target="_blank"
+            ><img src="/img/icon/ig.svg" alt="IG"
           /></a>
-          <a href=""
-            ><img src="/Media/Images/Iconos/linkein.svg" alt="LinkedIn"
+          <a
+            href="https://www.linkedin.com/company/asesoriadiferencial/"
+            target="_blank"
+            ><img src="/img/icon/linkein.svg" alt="in"
           /></a>
         </div>
       </div>
-      <div class="menu-pie-pagina">
-        <strong>Menú</strong>
+
+      <div class="footer-opciones">
+        <p>Menú</p>
         <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Nosotros</a></li>
-          <li><a href="">Servicios</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contacto</a></li>
+          <a href="/index.html"><li>Inicio</li></a>
+          <a href="/nosotros.html"><li>Nosotros</li></a>
+          <a href="/servicio/"><li>Servicios</li></a>
+          <a href="/blog.html"><li>Blog</li></a>
+          <a href="/contacto.html"><li>Contacto</li></a>
         </ul>
       </div>
 
-      <div class="informacion-contacto-pp">
-        <strong>Información de contacto</strong>
-        <br />
-        <img
-          src="/Media/Images/Iconos/ubicacion.svg"
-          alt="Ubicación"
-          style="display: inline"
-        />
-        <p style="display: inline">
-          Ofinova Centro Empresarial, Modulo 0B30, Km 11.5 Carretera Masaya
-        </p>
-        <br /><br />
-        <img
-          src="/Media/Images/Iconos/horario.svg"
-          alt="Horarios de atención"
-          style="display: inline"
-        />
-        <p style="display: inline">Lunes - Viernes 8:00 A.M. - 4:30 P.M.</p>
-        <br /><br />
-        <img
-          src="/Media/Images/Iconos/telefono.svg"
-          alt="Teléfono"
-          style="display: inline"
-        />
-        <p style="display: inline">(505) 2546-6789</p>
-        <br /><br />
-        <img
-          src="/Media/Images/Iconos/email.svg"
-          alt="Correo"
-          style="display: inline"
-        />
-        <p style="display: inline">contactodiferencial@dae.com</p>
+      <div class="footer-contact">
+        <h6>Información de contacto</h6>
+
+        <div class="footer-contact-element">
+          <img src="/img/icon/ubicacion.svg" alt="Ubicación" />
+          <p>
+            Ofinova Centro Empresarial, Modulo 0B30, Km 11.5 Carretera Masaya
+          </p>
+        </div>
+
+        <div class="footer-contact-element">
+          <img src="/img/icon/horario.svg" alt="Horario" />
+          <p>Lunes - Viernes 8:00 A.M. - 4:30 P.M.</p>
+        </div>
+
+        <div class="footer-contact-element">
+          <img src="/img/icon/telefono.svg" alt="Telefóno" />
+          <p>(505) 2546-6789</p>
+        </div>
+
+        <div class="footer-contact-element">
+          <img src="/img/icon/email.svg" alt="email" />
+          <p>contactodiferencial@dae.com</p>
+        </div>
       </div>
 
-      <br /><br />
-
-      <div class="suscripcion-blog">
-        <strong>Suscribete a nuestro blog</strong>
-        <p>No te pierdas de las últimas noticias y acontecer empresarial</p>
-        <form action="HTML/blog.html" method="post">
+      <div class="footer-blog">
+        <h6>Suscribete a nuestro blog</h6>
+        <form action="" class="footer-blog">
+          <label for="#"
+            >No te pierdas de las últimas noticias y acontecer empresarial
+          </label>
           <input
             type="email"
-            name="email-suscripcion"
-            id="email-suscripcion"
+            name="email"
+            id="email"
             placeholder="Correo electrónico"
           />
-          <button type="submit" class="boton">Suscribirse</button>
+          <input class="btn-footer" type="submit" value="Suscribirse" />
         </form>
       </div>
     </footer>
+    <!--PIE DE PAGINA-->
   </body>
 </html>
