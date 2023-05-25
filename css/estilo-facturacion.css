@@ -102,6 +102,7 @@ h1 {
   gap: 20px;
   align-items: center;
   justify-content: end;
+  margin-left: auto;
 }
 
 .total-item {
