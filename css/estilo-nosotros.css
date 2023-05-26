@@ -46,25 +46,26 @@
 
 .banner-info button {
     padding: 10px;
-    background: #FFFFFF;
-    border: 2px solid #012C5F;
+    background-color: #012C5F;
+    border: 2px solid #FFFFFF;
     border-radius: 10px;
 
 
     font-family: 'Open Sans';
     font-style: normal;
+    font-weight: bold;
     font-size: 22px;
     line-height: 30px;
     text-transform: uppercase;
-
-    color: #012C5F;
+    color: white;
 
 }
 
 .banner-info button:hover {
-    background-color: #012C5F;
-    color: white;
-    border: 2px solid #FFFFFF;
+    background: #FFFFFF;
+    color:#012C5F;
+    border: 2px solid #012C5F;
+
 }
 
 .banner-inicial img {

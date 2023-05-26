@@ -3,7 +3,7 @@
     position: relative;
     flex-direction: row;
     padding: 10px 30px;
-    gap: 10px;
+    justify-content: space-around;
     width: 100%;
     height: 65px;
     left: 0px;
@@ -66,31 +66,34 @@
 .cabecera-menu li ul {
     display: none;
     position: absolute;
-    top: 100%;
     left: 0;
     z-index: 1;
-    padding: 5px;
+    padding: 10px 5px;
     background-color: rgba(255, 255, 255,0.95);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .cabecera-menu li:hover ul {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
     align-items: flex-start;
     width: 300px;
     padding: 10px 5px;
     border-radius: 5px;
 }
 
-.cabecera-menu ul li ul li:hover{
-    background-color: #D8E6F4;
+.cabecera-menu ul li ul li{
     width: 290px;
-    height: 38px;
+    height: 40px;
     display: flex;
     align-items: center;
     border-radius: 5px;
+}
+
+.cabecera-menu ul li ul li:hover{
+    background-color: #D8E6F4;
 }
 
 
