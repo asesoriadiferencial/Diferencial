@@ -1,0 +1,151 @@
+.container {
+    width: 95%;
+    margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 60px;
+}
+
+.container-volver {
+    background-color: #D8E6F4;
+    width: 21%;
+    display: flex;
+    padding: 0 2.5%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.container-volver p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contenido h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42.72px;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.contenido small {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.descripcion {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.descripcion-info p {
+    width: 100%;
+    height: fit-content;
+    margin: 5px 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.descripcion-info small {
+    width: 100%;
+    height: fit-content;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.texto p {
+    /* P4-Montserrat */
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+
+    text-align: justify;
+
+    color: #000000;
+}
+
+
+.texto-imagen{
+    overflow: hidden;
+    padding: auto;
+    margin: auto;
+}
+
+.texto-imagen h2, h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34.18px;
+    line-height: 35px;
+    margin-bottom: 10px;
+    /* or 102% */
+
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.texto-imagen p {
+    margin: 0 40px;
+    width: 500px;
+    display: inline;
+    float: left;
+    /* P4-Montserrat */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+
+    text-align: justify;
+
+    color: #000000;
+
+}
+
+.texto-imagen img {
+    display: inline;
+    float: left;
+    width:450px;
+    height: auto;
+}
+
+#especial{
+    height: 320px;
+    width: auto;
+}
