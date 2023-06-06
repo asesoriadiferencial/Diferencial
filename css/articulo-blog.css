@@ -11,10 +11,9 @@
 }
 
 .container-volver {
-    background-color: #D8E6F4;
-    width: 26%;
+    width: 18%;
     display: flex;
-    padding: 0 2.5%;
+    padding-left: 2.5%;
     padding-bottom: 100%;
     flex-direction: column;
     align-items: flex-start;
@@ -25,9 +24,13 @@
 .container-volver p {
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 600;
+    font-weight: lighter;
     font-size: 16px;
     text-align: left;
+}
+
+.container-volver p:hover {
+    font-weight: bolder;
 }
 
 .contenido {
@@ -102,12 +105,13 @@
 }
 
 
-.texto-imagen{
+.texto-imagen {
     padding: auto;
     margin: auto;
 }
 
-.texto-imagen h2, h2 {
+.texto-imagen h2,
+h2 {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -122,7 +126,7 @@
 }
 
 .texto-imagen p {
-    margin-right:40px;
+    margin-right: 40px;
     width: 400px;
     display: inline;
     float: left;
@@ -140,14 +144,15 @@
 
 }
 
+
 .texto-imagen img {
     display: inline;
     float: left;
-    width:450px;
-    height: auto;
+    width: auto;
+    height: 350px;
 }
 
-#especial{
+#especial {
     height: 320px;
     width: auto;
 }
