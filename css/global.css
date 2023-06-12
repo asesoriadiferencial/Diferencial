@@ -17,6 +17,7 @@
 body {
     min-height: 100vh;
     min-height: 100vh;
+    height: 100%;
     font-family: 'Open Sans', Arial;
     font-weight: 700;
     font-size: 14px;
