@@ -1,0 +1,110 @@
+#estadistica {
+    background-color: #D8E6F4;
+}
+
+.panel-contenido-actualización {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding-right: 10%;
+}
+
+.panel-contenido-actualización h2 {
+    font-size: 32px;
+}
+
+.panel-contenido-actualización small {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.panel-contenido-opciones {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: fit-content;
+    gap: 5px;
+    height: 8%;
+}
+
+.panel-contenido-opciones label {
+    text-align: right;
+    width: fit-content;
+}
+
+.panel-contenido-opciones select,
+.panel-contenido-opciones input {
+    width: fit-content;
+    height: 100%;
+    padding: 1%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+    color: #012C5F;
+    border-radius: 5px;
+}
+
+.panel-contenido-cuadricula {
+    width: 100%;
+    height: 600px;
+    margin-top: 1%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: max-content;
+    column-gap: 5%;
+    row-gap: 5%;
+}
+
+.cuadro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 220px;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.cuadro p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.cuadro #numero {
+    font-size: 50px;
+}
+
+#visitantes {
+    background: linear-gradient(0deg, rgba(1, 44, 95, 0.7), rgba(1, 44, 95, 0.7)), 
+    url(/img/fondo-visitantes.png);
+}
+
+#lectura {
+    background: linear-gradient(0deg, rgba(1, 44, 95, 0.7), rgba(1, 44, 95, 0.7)), 
+    url(/img/vistas.png);
+}
+
+
+#clientes {
+    background: linear-gradient(0deg, rgba(1, 44, 95, 0.7), rgba(1, 44, 95, 0.7)), 
+    url(/img/nuevos-clientes.png);
+}
+
+#mensaje {
+    background: linear-gradient(0deg, rgba(1, 44, 95, 0.7), rgba(1, 44, 95, 0.7)), 
+    url(/img/mensajes.png);
+}
