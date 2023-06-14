@@ -1,4 +1,78 @@
-#mensajes{
+#mensajes {
     background-color: #D8E6F4;
 
+}
+
+.panel-contenido-opciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opcion {
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: #000;
+}
+
+.opcion:hover {
+    background-color: #e0e0e0;
+}
+
+.contador {
+    background-color: #012C5F;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.panel-contenido-tabla h2 {
+    margin-bottom: 10px;
+}
+
+#filtro {
+    background-color: #012C5F;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+.panel-contenido-tabla table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.panel-contenido-tabla th,
+td {
+    padding: 8px;
+    border: 1px solid #012C5F;
+}
+
+.panel-contenido-tabla thead {
+    background-color: #012C5F;
+    color: #fff;
+}
+
+.panel-contenido-tabla tbody tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.panel-contenido-tablatbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+#resumen {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    margin-top: 10px;
+    text-align: right;
+}
+
+.resumen-valor {
+    margin-left: 10px;
+    font-weight: bold;
 }

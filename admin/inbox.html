@@ -213,7 +213,66 @@
             Revisas los mensajes enviados desde tu página web.
           </p>
 
-         
+          <div class="panel-contenido-opciones">
+            <a href="#" class="opcion"
+              >Todos <span class="contador">10</span></a
+            >
+            <a href="#" class="opcion"
+              >Únicos <span class="contador">5</span></a
+            >
+            <a href="#" class="opcion"
+              >Mensuales <span class="contador">3</span></a
+            >
+            <a href="#" class="opcion"
+              >Descuentos <span class="contador">7</span></a
+            >
+          </div>
+
+          <div class="panel-contenido-tabla">
+            <h2>
+              Resultados de los ingresos con filtro:
+              <span id="filtro">Todos</span>
+            </h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Servicio/Plan</th>
+                  <th>Cliente</th>
+                  <th>Frecuencia</th>
+                  <th>Subtotal</th>
+                  <th>Descuento</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2023-06-01</td>
+                  <td>Servicio A</td>
+                  <td>Cliente 1</td>
+                  <td>Mensual</td>
+                  <td>$100.00</td>
+                  <td>$10.00</td>
+                  <td>$90.00</td>
+                </tr>
+                <tr>
+                  <td>2023-06-02</td>
+                  <td>Servicio B</td>
+                  <td>Cliente 2</td>
+                  <td>Único</td>
+                  <td>$50.00</td>
+                  <td>$0.00</td>
+                  <td>$50.00</td>
+                </tr>
+                <!-- Agrega más filas según tus datos -->
+              </tbody>
+            </table>
+            <div id="resumen">
+              <p>SUBTOTAL<span class="resumen-valor">$XX.XX</span></p>
+              <p>DESCUENTO<span class="resumen-valor">$XX.XX</span></p>
+              <p>TOTAL<span class="resumen-valor">$XX.XX</span></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
