@@ -1,6 +1,10 @@
-#mensajes {
+#ingresos {
     background-color: #D8E6F4;
+}
 
+
+.panel-contenido{
+    height: 1000px;
 }
 
 .panel-contenido-opciones {
@@ -27,6 +31,14 @@
     margin-left: 5px;
 }
 
+.panel-contenido-tabla{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .panel-contenido-tabla h2 {
     margin-bottom: 10px;
 }
@@ -42,6 +54,9 @@
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+
+    font-family: 'Open Sans';
+    font-size: 20px;
 }
 
 .panel-contenido-tabla th,
@@ -69,10 +84,23 @@ td {
     align-items: flex-end;
 
     margin-top: 10px;
+
     text-align: right;
 }
+
+#resumen p{
+    font-family: 'Open Sans';
+    font-size: 20px;
+}
+
 
 .resumen-valor {
     margin-left: 10px;
     font-weight: bold;
+}
+
+#grafico-pastel{
+    display: inline !important;
+    width: 450px !important;
+    height: auto !important;
 }
