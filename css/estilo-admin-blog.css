@@ -4,7 +4,7 @@
 }
 
 .panel-contenido {
-    height: 1000px;
+    height: 900px;
 }
 
 .panel-contenido-opciones {
@@ -29,9 +29,8 @@
     gap: 5px;
 
     padding: 10px;
-    padding-bottom: 0px;
     text-decoration: none;
-    color:#656869;
+    color: #656869;
 
 }
 
@@ -49,8 +48,120 @@
     height: fit-content;
 }
 
-#todos{
+#todos {
     font-weight: bold;
     color: #012C5F;
-    border-bottom: 2px solid #D8E6F4;
+    border-bottom: 3px solid #E46732;
+}
+
+.panel-contenido-opciones button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #FFFFFF;
+
+    height: 80%;
+
+
+    background-color: #01387B;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.panel-contenido-opciones button:hover {
+    cursor: pointer;
+    background-color: #01387bb6;
+}
+
+.contenedor-articulos {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.articulo {
+    width: 100%;
+    height: fit-content;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 1%;
+    padding-left: 1%;
+
+    border-radius: 2px;
+    border: solid 1px #012C5F;
+    border-left: 10px solid  #E46732;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.articulo img {
+    width: 25%;
+    height: 100%;
+}
+
+.articulo-info {
+    width: 55%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.articulo-info p {
+    max-width: 100%;
+    overflow: hidden;
+    font-weight: 500px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.articulo-info b {
+    font-weight: 700px;
+}
+
+.articulo-opciones {
+    width: 15%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 10%;
+}
+
+.articulo-opciones button {
+    width: 100%;
+ 
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #FFFFFF;
+
+    background-color: #01387B;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.articulo-opciones button:hover{
+    background-color: #FFFFFF;
+    color: #012C5F;
 }
