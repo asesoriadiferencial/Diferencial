@@ -7,14 +7,12 @@
     margin-right: 3%;
     width: 94%;
     max-width: 94%;
-    height: 100%;
 }
 
 .menu-vertical {
     display: flex;
     flex-direction: column;
     gap: 30px;
-
 
     width: 20%;
     height: 100vh;
@@ -79,42 +77,40 @@
 
 
 .panel {
-    position: relative;
     width: 78%;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    padding-bottom: 10%;
 }
 
 .panel h1 {
-    position: absolute;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
 
-    /* Espacio adicional debajo del texto */
-    display: inline-block;
     width: 100%;
+    border-bottom: #012C5F solid 3px;
+    padding: 0.5%;
+
+    /*
     height: 140px;
-    /* Permite aplicar el fondo solo al contenido del h1 */
-    line-height: 3;
-    /* Ajusta el espaciado vertical */
-
-
     background-image: url(/img/decoracion1.png);
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 950px 135px;
-    /* Ancho 100% y altura 2px */
-
+    */
 
 }
 
+/*
 .panel-contenido {
-    position: relative;
-    top: 100px;
-
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 25px;
     width: 100%;
+    height: auto;
 }
+*/
