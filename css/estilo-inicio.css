@@ -1,3 +1,8 @@
+/*Cabecera*/
+.icon-facturacion{
+    display: none;
+}
+
 /*ESTILOS DE BANNER INICIAL*/
 .banner {
     position: relative;

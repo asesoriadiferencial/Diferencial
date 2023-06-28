@@ -178,12 +178,30 @@
             id="correo"
             placeholder="Correo electrónico"
           />
+
+          <select id="pais-select">
+            <option value="" disabled selected>Cod país</option>
+            <option
+              value="AR"
+              data-icon="https://img.icons8.com/color/48/argentina.png"
+            >
+              ARG (+54)
+            </option>
+            <option value="BR" data-icon="bandera_brasil.png">
+              BRA (+55)
+            </option>
+            <option value="CL" data-icon="bandera_chile.png">
+              CHI (+56)
+            </option>
+          </select>
+
           <input
             type="tel"
             name="telefono"
             id="telefono"
-            placeholder="Teléfono"
+            placeholder="0000 - 0000"
           />
+
           <select id="servicios-cmb" name="servicios-cmb" title="servicio-cmb">
             <option value="" disabled selected hidden>
               Selecciona una opción
@@ -203,7 +221,7 @@
               Análisis de competencia
             </option>
             <option value="consultoria-recursos-humanos">
-              Consultoría de recursos humanos
+              Consultoría de RRHH
             </option>
           </select>
           <textarea
