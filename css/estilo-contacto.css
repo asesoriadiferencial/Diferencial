@@ -17,6 +17,11 @@
     gap: 40px;
 }
 
+#banner-page{
+    height: 400px;
+    margin-bottom: 0px;
+}
+
 .banner-contacto h2 {
     font-family: 'Open Sans';
     font-style: normal;
@@ -190,4 +195,13 @@ input.btn:hover {
 
 #telefono{
     width: 160px;
+}
+
+.map{
+    width: 95%;
+    margin: 2.5% 2.5%
+}
+
+footer{
+    margin-top: 0px !important;
 }
