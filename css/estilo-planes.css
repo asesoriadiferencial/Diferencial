@@ -1,18 +1,47 @@
 .banner {
-    background-image: url(/img/contacto1.png);
     width: 100%;
-    height: 100px;
+    height: 335px;
+    padding-left: 50px;
+    padding-right: 140px;
+    background: linear-gradient(0deg, rgba(1, 44, 95, 0.70) 0%, rgba(1, 44, 95, 0.70) 100%), url(/img/banner-planes.jpg), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 0px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
-.banner h1 {
+.banner-info {
+    height: 100%;
+    width: 740px;
+    padding-top: 80px;
+}
+
+.banner-info h1 {
     color: white;
-    text-align: center;
+    font-size: 53.41px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
     text-transform: uppercase;
-    align-content: center;
+}
+
+.banner-info p {
+    color: #FFF;
+    font-size: 27.34px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: normal;
+}
+
+.banner img {
+    height: 90%;
 }
 
 .planes-container {
@@ -28,7 +57,7 @@
 
 .plan {
     width: 270px;
-    height: 480px;
+    height: 550px;
     border-radius: 5px;
     border: 5px;
     border-style: solid;
@@ -67,7 +96,7 @@
 .plan-info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
     align-items: center;
     justify-content: center;
 }
@@ -92,26 +121,29 @@
     margin-top: 20px;
     width: 220px;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: none;
 
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 18px;
     color: #FFFFFF;
 }
 
-.plan-info button.uno{
+.plan-info button.uno {
     background: #01387b;
 }
 
-.plan-info button.dos{
+.plan-info button.dos {
     background: #e46732;
 }
-.plan-info button.tres{
+
+.plan-info button.tres {
     background: #0090cd;
 }
-.plan-info button.cuatro{
+
+.plan-info button.cuatro {
     background: #8c00af;
 }
 
@@ -127,18 +159,19 @@
     color: #e46732;
     background: #FFFFFF;
 }
+
 .plan-info button.tres:hover {
     border: solid 2px #0090cd;
     color: #0090cd;
     background: #FFFFFF;
+    box-shadow: none;
 }
+
 .plan-info button.cuatro:hover {
     border: solid 2px #8c00af;
     color: #8c00af;
     background: #FFFFFF;
 }
-
-
 
 .plan-servicios {
     font-family: 'Montserrat';
@@ -155,6 +188,7 @@
     /* Espacio para la imagen de viñeta */
     position: relative;
     margin: 10px;
+    margin-bottom: 20px;
 }
 
 .plan-servicios ul li::before {
@@ -209,6 +243,10 @@
     font-size: 20px;
 }
 
-.recomendacion:hover{
+.recomendacion a{
+    text-decoration: underline;
+}
+
+.recomendacion a:hover {
     font-weight: bold;
 }
