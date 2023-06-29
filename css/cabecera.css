@@ -1,3 +1,8 @@
+/*Cabecera*/
+.icon-facturacion{
+    display: none;
+}
+
 .cabecera {
     display: flex;
     position: relative;

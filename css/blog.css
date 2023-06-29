@@ -81,12 +81,6 @@
     align-items: center;
 }
 
-/*
-.lista-categorias ul li.selected {
-    position: relative;
-}*/
-
-
 .lista-categorias ul li a:hover {
     font-weight: bold;
 }
