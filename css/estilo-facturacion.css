@@ -1,8 +1,30 @@
-h1 {
+.banner-pago {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 30px;
+  padding: 110px 0px;
+
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 15px;
+  justify-content: space-between;
+
+  background-image: linear-gradient(0deg, rgba(1, 44, 95, 0.70) 0%, rgba(1, 44, 95, 0.70) 100%), url(/img/banner-info-pago.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center ;
+}
+
+h1 {
+  color: #FFF;
+  text-align: center;
+  /* T3-Open Sans */
+  font-size: 34.18px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
 }
 
 .tabla {
@@ -213,6 +235,12 @@ h1 {
   margin-left: 200px;
 }
 
+#img-csv{
+  position: absolute;
+  width: 25%;
+  left: 50%;
+}
+
 .forma-pago button {
   background-color: #012C5F;
   color: #FFFFFF;
@@ -227,7 +255,7 @@ h1 {
   font-size: 20px;
 }
 
-.forma-pago button:hover{
+.forma-pago button:hover {
   color: #012C5F;
   border: solid 2px #012C5F;
   background-color: #FFFFFF;

@@ -126,7 +126,10 @@
     <!--CABEBCERA-->
 
     <!--TITULO-->
-    <h1>FACTURACIÓN</h1>
+    <div class="banner-pago">
+      <h1>Información de pago</h1>
+      <img src="/img/decoracion5.png" alt="">
+    </div>
     <!--TITULO-->
 
     <!--TABLA-->
@@ -210,10 +213,11 @@
           <label for="csv"
             >CSV
             <p>*</p>
-            <a href="">?</a>
+            <a href="" id="help">?</a>
           </label>
           <input type="text" id="csv" required />
         </div>
+        <img id="img-csv" src="/img/csv.png" alt="" style="display: none;">
       </div>
 
       <div class="campo-politicas">
@@ -307,5 +311,16 @@
       </div>
     </footer>
     <!--PIE DE PAGINA-->
+    <script>
+      var help = document.getElementById("help");
+      var imagen = document.getElementById("img-csv");
+      help.addEventListener("mouseover", function (){
+        imagen.style.display = "";
+      });
+
+      help.addEventListener("mouseout", function (){
+        imagen.style.display = "none";
+      });
+    </script>
   </body>
 </html>

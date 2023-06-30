@@ -28,8 +28,8 @@
     flex-direction: row;
     gap: 10px;
     align-items: center;
-    justify-content: center;
-    padding: 6px 60px;
+    justify-content: left;
+    padding: 6px 70px;
     width: 410px;
 
     font-family: 'Open Sans';
@@ -59,7 +59,7 @@ hr {
 }
 
 .formulario {
-    width: 400px;
+    width: 450px;
     height: auto;
 
     display: flex;
@@ -67,7 +67,7 @@ hr {
     gap: 15px;
 }
 
-.formulario label {
+.formulario label , .formulario select {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -79,7 +79,8 @@ hr {
     color: #013878;
 }
 
-.formulario input {
+
+.formulario input, .formulario select {
     width: 420px;
     height: 50px;
     padding: 0px 10px;
@@ -120,12 +121,22 @@ input.btn-form:hover {
     gap: 3px;
 }
 
+#politica {
+    color: #656869;
+    text-align: center;
+    font-size: 14px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .politicas small {
     font-family: 'Montserrat';
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
-    line-height: 22px;
+    line-height: 30px;
     text-align: center;
     padding: 5px;
 }
@@ -153,9 +164,62 @@ input.btn-form:hover {
     opacity: 50%;
     position: fixed;
     bottom: 0;
+    z-index: -1;
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: flex-end;
     justify-content: space-between;
+}
+
+.registro {
+    display: none;
+}
+
+.telefono{
+    width: 93%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+}
+
+.password{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2%;
+}
+
+.password p{
+    background-color: #c4c6c7;
+    color: #656869;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password p:hover{
+    cursor: pointer;
+    background-color: #656869;
+    color: #c4c6c7;
+}
+
+.restriccion{
+    position: absolute;
+    top: 67%;
+    left: 42%;
+    width: 22%;
+    height: fit-content;
+    text-align: left;
+    padding: 1%;
+    border-radius: 2%;
+    border: solid 0.5px #012C5F;
+    background-color: #fffffff1;
+    color:#012C5F;
+    font-size: medium;
 }

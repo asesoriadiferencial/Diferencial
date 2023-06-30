@@ -37,38 +37,129 @@
     <!--CONTENIDO-->
     <div class="container">
       <h1>Regístrate</h1>
-      <button>
+      <button class="elemento">
         <img src="/img/icon/google.svg" alt="" />
         Continuar con Google
       </button>
 
-      <button>
+      <button class="elemento">
         <img src="/img/icon/fb-color2.png" alt="" />
         Continuar con Facebook
       </button>
 
+      <button id="registroforCorreo" class="elemento">
+        <img src="/img/icon/email.svg" alt="" />
+        Usar correo personal
+      </button>
+
       <hr />
 
-      <form class="formulario" action="">
+      <form class="formulario elemento" action="" style="display: none">
+        <label for="">Nombres</label>
+        <input type="text" placeholder="Ingrese sus nombres" />
+
+        <label for="">Apellidos</label>
+        <input type="text" placeholder="Ingrese sus apellidos" />
+
+        <label for="">Fecha de nacimiento</label>
+        <input type="date" name="" id="" />
+
+        <label for="">Género</label>
+        <select name="" id="">
+          <option value="" disabled selected>Selecione</option>
+          <option value="">Femenino</option>
+          <option value="">Masculino</option>
+          <option value="">Prefiero no decirlo</option>
+        </select>
+
+        <label for="">Teléfono</label>
+        <div class="telefono">
+          <select id="pais-select">
+            <option value="" disabled selected>Cod país</option>
+            <option
+              value="AR"
+              data-icon="https://img.icons8.com/color/48/argentina.png"
+            >
+              ARG (+54)
+            </option>
+            <option value="BR" data-icon="bandera_brasil.png">BRA (+55)</option>
+            <option value="CL" data-icon="bandera_chile.png">CHI (+56)</option>
+          </select>
+          <input
+            type="tel"
+            name="telefono"
+            id="telefono"
+            placeholder="0000 - 0000"
+          />
+        </div>
+
         <label for="">Correo electrónico</label>
         <input type="email" placeholder="Ingresa su correo electrónico" />
-        <label>Contraseña</label>
+
+        <div class="password">
+          <label>Contraseña</label>
+          <p id="ayuda">?</p>
+         
+        </div>
+
+        <p class="restriccion" style="display: none;">
+          Es obligado utilizar una longitud mínima de 8 caracteres. Se sugiere
+          utilizar una combinación de letras mayúsculas y minúsculas, números
+          y caracteres especiales.
+        </p>
+
         <input type="password" placeholder="Ingresa tu contraseña" />
+
         <label>Confirmación de contraseña</label>
         <input type="password" placeholder="Confrimación de contraseña" />
-        <input class="btn-form" type="button" value="Registrarme con mi correo" />
+
+        <input
+          class="btn-form"
+          type="button"
+          value="Registrarme con mi correo"
+        />
       </form>
 
       <div class="politicas">
         <small>
+          ¿Ya tienes cuenta? <a href="/inicio-sesion.html">Iniciar sesión</a>
+        </small>
+
+        <small id="politica">
           Al continuar con Google, Facebook o tu email , aceptas los términos de
           servicio y la Política de privacidad de DIFERENCIAL.
         </small>
-
-        <small>
-          <a href="/registro.html">¿Ya tienes cuenta? Iniciar sesión</a>
-        </small>
       </div>
     </div>
+
+    <div class="decoracion">
+      <img src="/img/decoracion4.png" alt="" />
+      <img src="/img/decoracion3.png" alt="" />
+    </div>
+
+    <script>
+      var button = document.getElementById("registroforCorreo");
+      var ayuda = document.getElementById("ayuda");
+      var r = document.getElementsByClassName("restriccion");
+      var elementos = document.querySelectorAll(".elemento");
+      button.addEventListener("click", function () {
+        elementos.forEach(function (elemento) {
+          if (elemento.style.display === "none") {
+            elemento.style.display = "";
+          } else {
+            elemento.style.display = "none";
+          }
+        });
+      });
+
+      ayuda.addEventListener("mouseover", function (){
+        r[0].style.display = "";
+      });
+
+      ayuda.addEventListener("mouseout", function (){
+        r[0].style.display = "none";
+      });
+
+    </script>
   </body>
 </html>
