@@ -3,6 +3,18 @@
 
 }
 
+.banner-admin-blog {
+    background: linear-gradient(0deg, rgba(216, 230, 244, 0.70) 0%, rgba(216, 230, 244, 0.70) 100%), url(/img/banner-admin-blog.png), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
 
 .panel-contenido-opciones {
     margin-top: 5px;
@@ -161,4 +173,13 @@
 .articulo-opciones button:hover{
     background-color: #FFFFFF;
     color: #012C5F;
+}
+
+#btn-papelera{
+    background: #3D3D3D;
+}
+
+#btn-papelera:hover{
+    background: #490505;
+    color: #FFFFFF;
 }

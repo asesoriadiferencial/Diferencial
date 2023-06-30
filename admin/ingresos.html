@@ -172,12 +172,14 @@
       </div>
 
       <div class="panel">
-        <h1>Ingresos</h1>
+        <div class="banner-admin-ingreso">
+          <h1>Ingresos</h1>
 
-        <p class="descripcion">
-          Observa los ingresos obtenidos por los planes contratados por tus
-          clientes.
-        </p>
+          <p class="descripcion">
+            Observa los ingresos obtenidos por los planes contratados por tus
+            clientes.
+          </p>
+        </div>
 
         <div class="panel-contenido-opciones">
           <a href="#" class="opcion" id="todos"
@@ -195,7 +197,6 @@
         </div>
 
         <div class="panel-contenido-tabla">
-          <div>
             <h2>
               Resultados de los ingresos con filtro:
               <span id="filtro">Todos</span>
@@ -207,8 +208,7 @@
                   <th>Fecha</th>
                   <th>Servicio/Plan</th>
                   <th>Cliente</th>
-                  <th>Frecuencia</th>
-                  <th>Subtotal</th>
+                  <th>Precio</th>
                   <th>Descuento</th>
                   <th>Total</th>
                 </tr>
@@ -218,7 +218,6 @@
                   <td>2023-06-01</td>
                   <td>Servicio A</td>
                   <td>Cliente 1</td>
-                  <td>Mensual</td>
                   <td>$100.00</td>
                   <td>$10.00</td>
                   <td>$90.00</td>
@@ -227,7 +226,6 @@
                   <td>2023-06-02</td>
                   <td>Servicio B</td>
                   <td>Cliente 2</td>
-                  <td>Único</td>
                   <td>$50.00</td>
                   <td>$0.00</td>
                   <td>$50.00</td>
@@ -241,9 +239,10 @@
               <p>DESCUENTO<span class="resumen-valor">$10.00</span></p>
               <p>TOTAL<span class="resumen-valor">$140.00</span></p>
             </div>
-          </div>
 
-          <canvas id="grafico-pastel"></canvas>
+            <div class="grafico">
+              <canvas id="grafico-pastel"></canvas>
+            </div>
         </div>
       </div>
     </div>

@@ -2,6 +2,19 @@
     background-color: #D8E6F4;
 }
 
+.banner-admin-ingreso {
+    background: linear-gradient(0deg, rgba(216, 230, 244, 0.70) 0%, rgba(216, 230, 244, 0.70) 100%), url(/img/banner-admin-ingresos.png), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+
 .panel-contenido-opciones {
     margin-top: 5px;
     width: 100%;
@@ -50,9 +63,10 @@
 
 .panel-contenido-tabla{
     width:100%;
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -96,11 +110,13 @@ td {
 }
 
 #resumen {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: right;
 
-    margin-top: 10px;
+    margin: 10px 0px;
 
     text-align: right;
 }
@@ -114,6 +130,13 @@ td {
 .resumen-valor {
     margin-left: 10px;
     font-weight: bold;
+}
+
+.grafico{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #grafico-pastel{

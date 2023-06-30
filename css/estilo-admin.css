@@ -1,3 +1,8 @@
+.cabecera-menu,
+.cabecera-acciones__busqueda {
+    display: none;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -36,8 +41,8 @@
 }
 
 .menu-vertical .icono h1 {
-    text-align: left;
-    padding: 10px;
+    text-align: center;
+    padding: 30px 15px;
     font-size: 20px;
     font-weight: bold;
     color: #FFFFFF;
@@ -64,7 +69,7 @@
     width: 100%;
     height: 50px;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
 
     font: Open Sans;
     font-size: 20px;
@@ -72,7 +77,7 @@
 }
 
 .menu-vertical .opciones ul li:hover {
-    background-color: #D8E6F4;
+    background-color: #E2E2E2;
 }
 
 
@@ -91,26 +96,18 @@
     font-size: 40px;
 
     width: 100%;
-    border-bottom: #012C5F solid 3px;
     padding: 0.5%;
 
-    /*
-    height: 140px;
-    background-image: url(/img/decoracion1.png);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 950px 135px;
-    */
-
 }
 
-/*
-.panel-contenido {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 25px;
-    width: 100%;
-    height: auto;
+.panel .descripcion {
+    color: #012C5F;
+    text-align: left;
+
+    /* P3-Montserrat */
+    font-size: 25px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
-*/
