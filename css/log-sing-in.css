@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
     /* Ajusta la altura según tus necesidades */
 }
 
@@ -15,8 +15,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
-    line-height: 87px;
+    font-size: 40px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -34,8 +33,9 @@
 
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #012C5F;
 
     background: #F9F9F9;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -64,14 +64,14 @@ hr {
 
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 8px;
 }
 
 .formulario label , .formulario select {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     display: flex;
     align-items: center;
@@ -82,10 +82,10 @@ hr {
 
 .formulario input, .formulario select {
     width: 420px;
-    height: 50px;
-    padding: 0px 10px;
+    height: 42px;
+    padding: 0px 8px;
 
-    font-size: 18px;
+    font-size: 16px;
 
     background: #EFEFEF;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -100,7 +100,7 @@ input.btn-form {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -112,7 +112,7 @@ input.btn-form:hover {
 .politicas {
     width: 400px;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 
     display: flex;
     flex-direction: column;
@@ -124,7 +124,7 @@ input.btn-form:hover {
 #politica {
     color: #656869;
     text-align: center;
-    font-size: 14px;
+    font-size: 10px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: 400;
@@ -134,11 +134,11 @@ input.btn-form:hover {
 .politicas small {
     font-family: 'Montserrat';
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     line-height: 30px;
     text-align: center;
-    padding: 5px;
+    padding: 4px;
 }
 
 .politicas small a {
@@ -153,7 +153,7 @@ input.btn-form:hover {
     width: fit-content;
     color: #656869;
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: 400;

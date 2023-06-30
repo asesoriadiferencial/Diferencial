@@ -5,7 +5,11 @@ const barraBusqueda = document.getElementById('barra-busqueda');
 // Agrega un evento de clic al icono de búsqueda
 iconoBusqueda[0].addEventListener('click', function() {
   // Muestra la barra de búsqueda
-  barraBusqueda.style.display = 'block';
+  if(barraBusqueda.style.display === "none"){
+    barraBusqueda.style.display = 'block';
+  }else{
+    barraBusqueda.style.display = 'none';
+  }
 });
 
 // Agrega un evento de presionar tecla al campo de búsqueda
