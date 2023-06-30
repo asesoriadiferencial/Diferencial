@@ -1,8 +1,8 @@
 .banner-pago {
   width: 100%;
-  height: 300px;
+  height: 200px;
   margin-bottom: 30px;
-  padding: 110px 0px;
+  padding: 90px 0px;
 
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
   background-image: linear-gradient(0deg, rgba(1, 44, 95, 0.70) 0%, rgba(1, 44, 95, 0.70) 100%), url(/img/banner-info-pago.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: center ;
+  background-position-y: center;
 }
 
 h1 {
@@ -24,6 +24,21 @@ h1 {
   font-style: normal;
   font-weight: 700;
   line-height: 35px;
+  text-transform: uppercase;
+}
+
+h2 {
+  width: 100%;
+  padding: 2% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 27.34px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   text-transform: uppercase;
 }
 
@@ -235,7 +250,7 @@ h1 {
   margin-left: 200px;
 }
 
-#img-csv{
+#img-csv {
   position: absolute;
   width: 25%;
   left: 50%;
@@ -259,4 +274,149 @@ h1 {
   color: #012C5F;
   border: solid 2px #012C5F;
   background-color: #FFFFFF;
+}
+
+.tabla-plan {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+
+  border-radius: 5px;
+}
+
+.tabla-plan h3 {
+  background-color: #012C5F;
+  display: flex;
+  justify-content: center;
+  padding: 5px 20px;
+
+
+  color: #FFF;
+  text-align: center;
+  /* T5- Open Sans */
+  font-size: 21.88px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.plan-actual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  border: solid 1px #012C5F;
+
+}
+
+.plan-actual p {
+  border-radius: 10px;
+  background: #8C00AF;
+  padding: 5%;
+  margin: 0 5%;
+
+
+  color: #FFF;
+  text-align: center;
+  /* T5- Open Sans */
+  font-size: 21.88px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.plan-actual button {
+  border: 0;
+  border-radius: 20px;
+  background: #012C5F;
+  padding: 4% 0;
+  margin: 0 5%;
+  margin-bottom: 4%;
+
+
+  color: #FFF;
+  text-align: center;
+  /* T6 - Open Sans */
+  font-size: 17px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.plan-actual button:hover {
+  background: #012b5fa6;
+}
+
+.datos-pago {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 1px #012C5F;
+  padding-bottom: 30px;
+}
+
+.datos-pago .fecha {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 15px;
+}
+
+.datos-pago .fecha strong {
+  text-align: center;
+  /* T5- Open Sans */
+  font-size: 21.88px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.datos-pago .fecha p {
+  color: var(--blue-secundario, #01387B);
+  text-align: center;
+  /* P4-Montserrat */
+  font-size: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+#editar{
+  background-image: url('/img/icon/lapiz.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  padding: 20px 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #012C5F;
+  border-radius: 10px;
+}
+
+#editar:hover{
+  background-color: #012b5fd7;
+}
+
+#cancelar{
+  background-image: url('/img/icon/cancelar-pago.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  padding: 20px 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #C30000;
+  border-radius: 10px;
+}
+
+#cancelar:hover{
+  background-color: #c30000d0;
 }
