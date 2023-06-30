@@ -149,19 +149,18 @@
     flex-grow: 0;
 }
 
-.cabecera-acciones__busqueda input {
-    width: 397px;
+.cabecera-acciones__busqueda #barra-busqueda {
+    width: 250%;
     height: 35px;
     padding: 5px;
     border: 2px solid #012C5F;
     border-radius: 7px;
 
     /* Inside auto layout */
-
+    display: none;
     flex: none;
     order: 0;
     flex-grow: 0;
-    display: none;
 }
 
 .cabecera-acciones img {
