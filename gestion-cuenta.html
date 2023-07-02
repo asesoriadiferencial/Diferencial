@@ -27,6 +27,18 @@
   </head>
 
   <body>
+    <!--camaara-->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <video id="videoElement" autoplay></video>
+        <div class="botones-camara">
+          <button id="captureBtn">Tomar foto</button>
+          <button id="cancelBtn">Cancelar</button>
+        </div>
+      </div>
+    </div>
+    <!--camaara-->
+
     <!--CABECERA-->
     <header class="cabecera">
       <a href="/index.html" class="cabecera-logo">
@@ -153,10 +165,12 @@
       <h2>Datos personales</h2>
       <div class="personal">
         <div class="div-foto">
-          <div class="foto"></div>
+          <div id="result" class="foto result-container">
+            <img id="capturedImage" src="/img/user.png" alt="foto" />
+          </div>
           <div class="botones">
-            <button>Subir</button>
-            <button>Tomar</button>
+            <button id="selectImageButton">Subir</button>
+            <button id="openModalBtn">Tomar</button>
           </div>
         </div>
 
@@ -336,7 +350,6 @@
               >
               <button type="submit">Agregar</button>
             </div>
-
           </form>
         </div>
       </div>
@@ -427,5 +440,6 @@
     <!--PIE DE PAGINA-->
     <script src="/js/busqueda.js"></script>
     <script src="/js/menu-usuario.js"></script>
+    <script src="/js/camara-access.js"></script>
   </body>
 </html>
