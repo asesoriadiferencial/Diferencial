@@ -48,6 +48,11 @@
     justify-content: space-between;
 }
 
+#articulo2{
+    background: linear-gradient(0deg, rgba(1, 44, 95, 0.70) 0%, rgba(1, 44, 95, 0.70) 100%), url(/img/articulo2-1.jpg), lightgray 50% / cover no-repeat;
+
+}
+
 .banner-articulo,
 .banner-articulo a,
 .banner-articulo .descripcion p {
