@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/cabecera.css" />
     <link rel="stylesheet" href="/css/pie-pagina.css" />
-    <link rel="stylesheet" href="/css/estilo-facturacion.css" />
+    <link rel="stylesheet" href="/css/estilo-gestion-cuenta.css" />
     <!-- #endregion: Links -->
     <title>Diferencial: Asesoría Empresarial</title>
   </head>
@@ -141,78 +141,207 @@
     </header>
     <!--CABEBCERA-->
 
-    <!--TITULO-->
-    <div class="banner-pago">
-      <h1>Información de facturacion</h1>
-      <img src="/img/decoracion5.png" alt="" />
+    <!-- #region BANNER INICIAL-->
+    <div class="banner">
+      <h1>GESTIÓN DE CUENTA</h1>
+      <p>Cambia información y datos de tu cuenta de una manera sencilla</p>
     </div>
-    <!--TITULO-->
-    <div class="tabla-plan">
-      <div class="plan-actual">
-        <h3>Plan actual</h3>
-        <p>Plan de crecimiento</p>
-        <button>Cambiar</button>
-      </div>
+    <!--BANNER INICIAL-->
 
-      <div class="datos-pago">
-        <h3>Datos de pago</h3>
-
-        <div class="fecha">
-          <strong>Fecha de pago:</strong>
-          <p>15 de cada mes</p>
-          <button id="editar"></button>
+    <div class="container">
+      <!-- #region INFORMACIÓN PERSONAL-->
+      <h2>Datos personales</h2>
+      <div class="personal">
+        <div class="div-foto">
+          <div class="foto"></div>
+          <div class="botones">
+            <button>Subir</button>
+            <button>Tomar</button>
+          </div>
         </div>
 
-        <div class="fecha">
-          <strong>Próximo pago:</strong>
-          <p>15 - Julio - 2023</p>
-          <button id="cancelar"></button>
+        <div class="formulario">
+          <form action="">
+            <div class="form-group">
+              <div class="campos">
+                <label for="">Nombres</label>
+                <input type="text" name="" id="" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="campos">
+                <label for="">Apellidos</label>
+                <input type="text" name="" id="" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="campos">
+                <label for="">Fecha de nacimiento</label>
+                <input type="date" name="" id="fecha-nacimiento" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="campos">
+                <label for="">Género</label>
+                <select name="" id="genero">
+                  <option value="" disabled selected>Selecione</option>
+                  <option value="">Femenino</option>
+                  <option value="">Masculino</option>
+                  <option value="">Prefiero no decirlo</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="campos">
+                <label for="">Teléfono</label>
+                <div class="telefono">
+                  <select id="pais-select">
+                    <option value="" disabled selected>Cod país</option>
+                    <option
+                      value="AR"
+                      data-icon="https://img.icons8.com/color/48/argentina.png"
+                    >
+                      ARG (+54)
+                    </option>
+                    <option value="BR" data-icon="bandera_brasil.png">
+                      BRA (+55)
+                    </option>
+                    <option value="CL" data-icon="bandera_chile.png">
+                      CHI (+56)
+                    </option>
+                  </select>
+                  <input
+                    type="tel"
+                    name="telefono"
+                    id="telefono"
+                    placeholder="0000 - 0000"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <button>Guardar cambios</button>
+          </form>
         </div>
       </div>
+      <!-- #endregion INFORMACÍÓN PERSONAL-->
+
+      <!-- #region CREDENCIALES-->
+      <h2>Credenciales de acceso</h2>
+      <div class="credenciales">
+        <div class="correo">
+          <h3>Cambiar correo</h3>
+
+          <form action="" class="formulario">
+            <div class="form-group">
+              <label for="">Correo electrónico actual</label>
+              <input type="email" />
+            </div>
+            <div class="form-group">
+              <label for="">Correo electrónico nuevo</label>
+              <input type="email" />
+            </div>
+            <button>Guardar cambios</button>
+          </form>
+        </div>
+
+        <div class="contrasena">
+          <h3>Cambiar contraseña</h3>
+
+          <form class="formulario" action="">
+            <p>
+              Recuerda que, para cambiar la contraseña es obligado utilizar una
+              longitud mínima de 8 caracteres.
+            </p>
+            <div class="form-group">
+              <label for="">Contraseña actual</label>
+              <input type="password" name="" id="" />
+            </div>
+            <div class="form-group">
+              <label for="">Nueva contraseña</label>
+              <input type="password" name="" id="" />
+            </div>
+            <div class="form-group">
+              <label for="">Confirmación de contraseña</label>
+              <input type="password" name="" id="" />
+            </div>
+            <button>Guardar cambios</button>
+          </form>
+        </div>
+      </div>
+      <!-- #endregion CREDENCIALES-->
+
+      <!-- #region FORMAS DE PAGO-->
+      <h2>Información de pago</h2>
+      <div class="pago">
+        <div class="forma-actual">
+          <h3>Formas de pago actual</h3>
+          <div class="tarjeta-actual">
+            <img src="/img/icon/mastercard.svg" alt="icon" />
+            <p>**** **** 6194</p>
+            <button>Quitar</button>
+          </div>
+          <small>Para quitarla, agrega otra forma de pago</small>
+        </div>
+
+        <div class="tarjeta">
+          <h3>Forma de Pago</h3>
+          <form class="formulario">
+            <div class="form-group">
+              <label for="numeroTarjeta"
+                >Número de Tarjeta
+                <p id="requerido">*</p>
+              </label>
+              <div class="campo-tarjeta-inputs">
+                <input type="text" id="numeroTarjeta" required />
+                <img src="/img/icon/mastercard.svg" alt="Imagen 1" />
+                <img src="/img/icon/visa.svg" alt="Imagen 2" />
+                <img src="/img/icon/americanexpress.svg" alt="Imagen 3" />
+              </div>
+            </div>
+
+            <div class="form-group" id="fecha">
+              <label for="fechaVencimiento"
+                >Fecha de Vencimiento
+                <p id="requerido">*</p></label
+              >
+              <input
+                type="text"
+                id="fechaVencimiento"
+                placeholder="MM/AAAA"
+                required
+              />
+            </div>
+
+            <div class="form-group" id="csv">
+              <label for="csv"
+                >CSV
+                <p id="requerido">*</p>
+                <a href="" id="help">?</a>
+              </label>
+              <input type="text" id="csv" required />
+            </div>
+
+            <img id="img-csv" src="/img/csv.png" alt="" style="display: none" />
+
+            <div class="form-group acepto">
+              <input type="checkbox" id="acepto" name="acepto" />
+              <label for="politicaPrivacidad"
+                >He leído y acepto la política de privacidad y de la página
+                web</label
+              >
+              <button type="submit">Agregar</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <!-- #endregion FORMAS DE PAGO-->
     </div>
-
-    <h2>Historial de facturación</h2>
-    <!--TABLA-->
-    <table class="tabla">
-      <thead>
-        <tr>
-          <th>Servicio/Plan</th>
-          <th>Precio</th>
-          <th>Tipo de facturación</th>
-          <th>Fecha</th>
-          <th>Total</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Plan optimizado</td>
-          <td>$100.00</td>
-          <td>Mensual</td>
-          <td>03-may-2023</td>
-          <td>$100.00</td>
-        </tr>
-      </tbody>
-    </table>
-    <!--TABLA-->
-
-    <!--RESUMEN DE PAGO-->
-    <div class="resumen-pago">
-      <div class="resumen-pago-total">
-        <div class="total-item">
-          <p class="total-item-titulo">Subtotal</p>
-          <p>$ 100.00</p>
-        </div>
-        <div class="total-item">
-          <p class="total-item-titulo">Descuento</p>
-          <p>$ 0.00</p>
-        </div>
-        <div class="total-item">
-          <p class="total-item-titulo total">Total</p>
-          <p class="total">$ 100.00</p>
-        </div>
-      </div>
-    </div>
-    <!--RESUMEN DE PAGO-->
 
     <!--PIE DE PAGINA-->
     <footer class="footer-container">
