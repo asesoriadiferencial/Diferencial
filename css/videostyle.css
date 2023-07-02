@@ -1,0 +1,122 @@
+/* Estilos generales */
+
+.video-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background-color: #01387B;
+    padding: 10px;
+  }
+  
+  /* Estilos de los botones */
+  .controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 5px;
+    padding: 5px 10px;
+    transition: opacity 0.3s;
+  }
+  
+  .controls button:hover {
+    opacity: 0.7;
+  }
+  
+  /* Estilos del rango de volumen */
+  .controls input[type="range"] {
+    width: 100px;
+    margin: 0 5px;
+    color: #fff;
+  }
+  
+  /* Estilos específicos para los controles del reproductor de video de YouTube */
+  #youtubePlayer {
+    width: 60%;
+  }
+  
+  /* Ajusta el tamaño de los controles del reproductor de video de YouTube */
+  .ytp-chrome-bottom,
+  .ytp-chrome-controls {
+    bottom: 0;
+  }
+  
+  /* Oculta los controles de video de YouTube nativos */
+  .ytp-chrome-bottom,
+  .ytp-chrome-top,
+  .ytp-chrome-left,
+  .ytp-chrome-right,
+  .ytp-chrome-controls {
+    display: none !important;
+  }
+  
+  /* Estilos para los iconos de FontAwesome */
+  .fa {
+    display: inline-block;
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+  }
+  
+  /* Ajusta el tamaño de los iconos */
+  .fa {
+    font-size: 16px;
+  }
+  
+  .final{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+  }
+
+  /* Estilos del rango de volumen */
+.controls input[type="range"] {
+  width: 20%;
+  margin: 0 5px;
+  background-color: white; /* Cambia el color de fondo a blanco */
+  color: black; /* Cambia el color del texto a negro */
+  border: none;
+  appearance: none; /* Elimina los estilos nativos del rango */
+}
+
+/* Estilos para el rango de volumen en Chrome y Safari */
+.controls input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background-color: black; /* Cambia el color del botón del rango */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Estilos para el rango de volumen en Firefox */
+.controls input[type="range"]::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background-color: black; /* Cambia el color del botón del rango */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Estilos para el rango de volumen en IE y Edge */
+.controls input[type="range"]::-ms-thumb {
+  width: 10px;
+  height: 10px;
+  background-color: #01387B; /* Cambia el color del botón del rango */
+  border-radius: 50%;
+  cursor: pointer;
+}
