@@ -24,11 +24,11 @@ barraBusqueda.addEventListener('keydown', function(event) {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const valorBusqueda = urlParams.get('busqueda');
-  
-    const otroCampo = document.getElementById('buscador');
-    otroCampo.value = valorBusqueda;
-  });
-  
+document.addEventListener("DOMContentLoaded", function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  const valorBusqueda = urlParams.get("busqueda");
+
+  const otroCampo = document.getElementById("buscador");
+  otroCampo.value = valorBusqueda;
+  document.title += " " + valorBusqueda;
+});

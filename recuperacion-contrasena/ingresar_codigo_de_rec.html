@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Consultoría empresarial, Asesoria de empresas,"
+    />
+    <meta name="autor" content="Luis Saúl Brenes Chávez" />
+    <meta
+      name="Description"
+      content="Sitio web de la asesoria empresarial Diferencial (proyecto a empresa ficticia)"
+    />
+    <link rel="icon" href="/img/diferencial/logo.ico" />
+    <link rel="stylesheet" href="/css/structure_design_rc.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Recuperación de contraseña</title>
+  </head>
+  <body>
+    <header></header>
+
+    <div class="boarding">
+      <div class="suboarding">
+        <img src="/img/icon/logo-nombre.png" alt="" class="Dif_logo" />
+        <h2 id="anotherh1_1">Introduce el código de recuperación</h2>
+        <p id="exception_to_pague">
+          Por favor, revisa tu correo, hemos enviado un código de 6 números a
+        </p>
+
+        <p id="remarcable_mail_1">clenin030901@outlook.com</p>
+
+        <div class="mechanism_sc">
+          <div class="box_codes">
+            <input
+              class="textbox2_code"
+              type="text"
+              name="code"
+              placeholder="-"
+            />
+            <input
+              class="textbox2_code"
+              type="text"
+              name="code"
+              placeholder="-"
+            />
+            <input
+              class="textbox2_code"
+              type="text"
+              name="code"
+              placeholder="-"
+            />
+            <input
+              class="textbox2_code"
+              type="text"
+              name="code"
+              placeholder="-"
+            />
+            <input
+              class="textbox2_code"
+              type="text"
+              name="code"
+              placeholder="-"
+            />
+            <input
+              class="textbox2_code"
+              type="text"
+              name="code"
+              placeholder="-"
+            />
+          </div>
+
+          <div class="button_groupA">
+            <input class="tipoA" type="button" value="Continuar" id="btn1" />
+            <button class="tipoC" id="btn2">Reenviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var botones = document.getElementsByClassName("tipoA");
+
+      // Agregar el evento de clic a cada botón
+      botones[0].addEventListener("click", function () {
+        // Redirigir a la página HTML deseada dentro de tu sitio
+        window.location.href =
+          "/recuperacion-contrasena/exito.html";
+      });
+    </script>
+  </body>
+</html>

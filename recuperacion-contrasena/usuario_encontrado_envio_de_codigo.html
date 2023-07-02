@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Consultoría empresarial, Asesoria de empresas,"
+    />
+    <meta name="autor" content="Luis Saúl Brenes Chávez" />
+    <meta
+      name="Description"
+      content="Sitio web de la asesoria empresarial Diferencial (proyecto a empresa ficticia)"
+    />
+    <link rel="icon" href="/img/diferencial/logo.ico" />
+    <link rel="stylesheet" href="/css/structure_design_rc.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Recuperación de contraseña</title>
+  </head>
+  <body>
+    <header></header>
+
+    <div class="boarding">
+      <div class="suboarding">
+        <img src="/img/icon/logo-nombre.png" alt="" class="Dif_logo" />
+        <h2>Recuperación de Contraseña</h2>
+        <p>Por favor, ingresa tu correo electrónico para buscar tu cuenta.</p>
+        <div class="mechanism_sc">
+          <div class="user_found_boarding">
+            <p class="remarcable_text">Hemos encontrado tu cuenta</p>
+
+            <div class="user_found_photo">
+              <img src="/img/icon/user.png" alt="" />
+            </div>
+
+            <p class="name" id="name_1">Brandon Cajina</p>
+
+            <p class="mail" id="mail_1">clenin030901@gmail.com</p>
+
+            <a href="*" class="searcher">¿No eres tú?</a>
+          </div>
+
+          <div class="button_groupA">
+            <input class="tipoA" type="button" value="Continuar" id="btn3" />
+          </div>
+        </div>
+        <div class="container_liner">
+          <hr class="liner" />
+        </div>
+
+        <a href="/inicio-sesion.html" class="return_to">Iniciar sesión</a>
+      </div>
+    </div>
+    <script>
+      // Obtener todos los botones con la clase deseada
+      var botones = document.getElementsByClassName("tipoA");
+
+      // Agregar el evento de clic a cada botón
+      botones[0].addEventListener("click", function () {
+        // Redirigir a la página HTML deseada dentro de tu sitio
+        window.location.href =
+          "/recuperacion-contrasena/ingresar_codigo_de_rec.html";
+      });
+    </script>
+  </body>
+</html>
