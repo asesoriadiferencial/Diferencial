@@ -99,6 +99,14 @@
           />
         </div>
 
+        <a href="/historial-facturacion.html">
+          <img
+            src="/img/icon/history.png"
+            alt=""
+            style="width: 32px; height: 32px"
+          />
+        </a>
+
         <a href="/facturacion.html">
           <img
             src="/img/icon/facturacion.svg"
@@ -107,12 +115,31 @@
           />
         </a>
 
-        <a href="/inicio-sesion.html">
-          <button class="btn-login">Iniciar sesión</button>
-        </a>
+        <img
+          id="user-icon"
+          src="/img/icon/user.png"
+          alt=""
+          style="width: 32px; height: 32px"
+        />
+        <div id="dropdown-menu">
+          <ul>
+            <li>
+              <a id="gestion" href="#">
+                <img src="/img/icon/gestionar.svg" alt="icon" />Gestionar
+                cuenta</a
+              >
+            </li>
+            <li>
+              <a id="cerrar-sesion" href="#"
+                ><img src="/img/icon/cerrar-sesion.svg" alt="icon" />Cerrar
+                sesión
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
-    <!--CABEBCERA-->>
+    <!--CABEBCERA-->
 
     <!--TITULO-->
     <div class="banner-pago">
@@ -270,5 +297,24 @@
     </footer>
     <!--PIE DE PAGINA-->
     <script src="/js/busqueda.js"></script>
+    <script>
+      document
+        .getElementById("user-icon")
+        .addEventListener("click", function () {
+          document.getElementById("dropdown-menu").style.display = "block";
+        });
+
+      document.addEventListener("click", function (event) {
+        var dropdownMenu = document.getElementById("dropdown-menu");
+        var targetElement = event.target;
+
+        if (
+          !dropdownMenu.contains(targetElement) &&
+          targetElement.id !== "user-icon"
+        ) {
+          dropdownMenu.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>

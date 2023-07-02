@@ -1,5 +1,5 @@
 /*Cabecera*/
-.icon-facturacion{
+.icon-facturacion {
     display: none;
 }
 
@@ -55,15 +55,15 @@
     position: relative;
 }
 
-.submenu{
+.submenu {
     display: inline-block;
 }
 
-.submenu::after{
-    content: "\25BE"; 
+.submenu::after {
+    content: "\25BE";
 }
 
-.submenu:hover{
+.submenu:hover {
     content: "\25BF";
 }
 
@@ -73,16 +73,16 @@
     left: 0;
     z-index: 1;
     padding: 10px 5px;
-    background-color: rgba(255, 255, 255,0.95);
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
-.cabecera-menu li{
+.cabecera-menu li {
     font-weight: normal;
 }
 
-.cabecera-menu li:hover{
+.cabecera-menu li:hover {
     font-weight: bold;
     background-color: #D8E6F4;
     border-radius: 5px;
@@ -99,7 +99,7 @@
     border-radius: 5px;
 }
 
-.cabecera-menu ul li ul li{
+.cabecera-menu ul li ul li {
     width: 290px;
     height: 40px;
     display: flex;
@@ -107,7 +107,7 @@
     border-radius: 5px;
 }
 
-.cabecera-menu ul li ul li:hover{
+.cabecera-menu ul li ul li:hover {
     background-color: #D8E6F4;
 }
 
@@ -174,7 +174,7 @@
     flex-grow: 0;
 }
 
-.icon-busqueda:hover{
+.icon-busqueda:hover {
     cursor: pointer;
     padding: 1px;
 }
@@ -212,4 +212,59 @@
     color: #012C5F;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 85%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 3%;
+}
+
+#dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#dropdown-menu li {
+    margin-bottom: 10px;
+    padding: 2% 0;
+    border-radius: 5px;
+}
+
+#dropdown-menu li:hover{
+    background-color: #D8E6F4;
+}
+
+#dropdown-menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+#dropdown-menu img {
+    margin-right: 5px;
+}
+
+
+
+#gestion {
+    color: #012C5F !important;
+    font-size: 1em;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#cerrar-sesion {
+    color: #E46732 !important;
+    font-size: 1em;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
 }

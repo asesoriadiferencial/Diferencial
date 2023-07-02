@@ -99,13 +99,30 @@
           />
         </div>
 
-        <a href="/inicio-sesion.html">
-          <img
-            src="/img/icon/user.png"
-            alt=""
-            style="width: 32px; height: 32px"
-          />
-        </a>
+        <!--icono user-->
+        <img
+          id="user-icon"
+          src="/img/icon/user.png"
+          alt=""
+          style="width: 32px; height: 32px"
+        />
+        <div id="dropdown-menu">
+          <ul>
+            <li>
+              <a id="gestion" href="#">
+                <img src="/img/icon/gestionar.svg" alt="icon" />Gestionar
+                cuenta</a
+              >
+            </li>
+            <li>
+              <a id="cerrar-sesion" href="#"
+                ><img src="/img/icon/cerrar-sesion.svg" alt="icon" />Cerrar
+                sesión
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--icono user-->
       </div>
     </header>
     <!--CABEBCERA-->
@@ -176,62 +193,71 @@
             Descubre más sobre la actividad y el comportamiento de los
             visitantes sobre tu sitio.
           </p>
-        </div>  
+        </div>
 
-          <div class="panel-contenido-opciones">
-            <select id="opciones">
-              <option value="dia" itemid="0">Día</option>
-              <option value="semana" itemid="1">Semana</option>
-              <option value="mes">Mes</option>
-              <option value="trimestre">Trimestre</option>
-              <option value="semestre">Semestre</option>
-              <option value="ano">Año</option>
-              <option value="personalizado">Personalizado</option>
-            </select>
-            <label for="">Fecha incio:</label>
-            <input type="date" id="calendario-inicio" placeholder="" />
-            <label for="">Fecha fin:</label>
-            <input type="date" id="calendario-final" />
+        <div class="panel-contenido-opciones">
+          <select id="opciones">
+            <option value="dia" itemid="0">Día</option>
+            <option value="semana" itemid="1">Semana</option>
+            <option value="mes">Mes</option>
+            <option value="trimestre">Trimestre</option>
+            <option value="semestre">Semestre</option>
+            <option value="ano">Año</option>
+            <option value="personalizado">Personalizado</option>
+          </select>
+          <label for="">Fecha incio:</label>
+          <input type="date" id="calendario-inicio" placeholder="" />
+          <label for="">Fecha fin:</label>
+          <input type="date" id="calendario-final" />
+        </div>
+
+        <div class="panel-contenido-actualización">
+          <h2>16 de mayo de 2023</h2>
+          <small
+            >Última actualización: 14:05 (se actualiza cada 30 minutos)</small
+          >
+        </div>
+
+        <div class="panel-contenido-cuadricula">
+          <div class="cuadro" id="visitantes">
+            <img src="/img/icon/group.png" alt="icon" />
+            <p>Visitantes</p>
+            <p id="numero">20</p>
           </div>
 
-          <div class="panel-contenido-actualización">
-            <h2>16 de mayo de 2023</h2>
-            <small
-              >Última actualización: 14:05 (se actualiza cada 30 minutos)</small
-            >
+          <div class="cuadro" id="lectura">
+            <img src="/img/icon/reading.png" alt="" />
+            <p>Articulos leídos</p>
+            <p id="numero">70</p>
           </div>
 
-          <div class="panel-contenido-cuadricula">
-            <div class="cuadro" id="visitantes">
-              <img src="/img/icon/group.png" alt="icon" />
-              <p>Visitantes</p>
-              <p id="numero">20</p>
-            </div>
-
-            <div class="cuadro"  id="lectura">
-              <img src="/img/icon/reading.png" alt="">
-              <p>Articulos leídos</p>
-              <p id="numero">70</p>
-            </div>
-
-            <div class="cuadro" id="clientes">
-              <img width="48" height="48" src="https://img.icons8.com/sf-black-filled/48/FFFFFF/star.png" alt="star"/>
-              <p>Nuevos clientes</p>
-              <p id="numero">7</p>
-            </div>
-
-            <div class="cuadro" id="mensaje">
-              <img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/communication.png" alt="communication"/>
-              <p>Mensajes</p>
-              <p id="numero">10</p>
-            </div>
+          <div class="cuadro" id="clientes">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/sf-black-filled/48/FFFFFF/star.png"
+              alt="star"
+            />
+            <p>Nuevos clientes</p>
+            <p id="numero">7</p>
           </div>
 
-
+          <div class="cuadro" id="mensaje">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/communication.png"
+              alt="communication"
+            />
+            <p>Mensajes</p>
+            <p id="numero">10</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <!--PIE DE PAGINA-->
     <!--PIE DE PAGINA-->
+    <script src="/js/menu-usuario.js"></script>
   </body>
 </html>

@@ -98,14 +98,30 @@
             class="icon-busqueda"
           />
         </div>
-
-        <a href="/inicio-sesion.html">
-          <img
-            src="/img/icon/user.png"
-            alt=""
-            style="width: 32px; height: 32px"
-          />
-        </a>
+        <!--icono user-->
+        <img
+          id="user-icon"
+          src="/img/icon/user.png"
+          alt=""
+          style="width: 32px; height: 32px"
+        />
+        <div id="dropdown-menu">
+          <ul>
+            <li>
+              <a id="gestion" href="#">
+                <img src="/img/icon/gestionar.svg" alt="icon" />Gestionar
+                cuenta</a
+              >
+            </li>
+            <li>
+              <a id="cerrar-sesion" href="#"
+                ><img src="/img/icon/cerrar-sesion.svg" alt="icon" />Cerrar
+                sesión
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--icono user-->
       </div>
     </header>
     <!--CABEBCERA-->
@@ -173,9 +189,10 @@
         <div class="banner-admin-blog">
           <h1>Entradas del blog</h1>
 
-          <p class="descripcion">Crea, edita y gestiona las entradas del blog.</p>
+          <p class="descripcion">
+            Crea, edita y gestiona las entradas del blog.
+          </p>
         </div>
-       
 
         <div class="panel-contenido-opciones">
           <button>Nuevo articulo</button>
@@ -248,5 +265,29 @@
 
     <!--PIE DE PAGINA-->
     <!--PIE DE PAGINA-->
+    <script src="/js/menu-usuario.js"></script>   <!--icono user-->
+    <img
+      id="user-icon"
+      src="/img/icon/user.png"
+      alt=""
+      style="width: 32px; height: 32px"
+    />
+    <div id="dropdown-menu">
+      <ul>
+        <li>
+          <a id="gestion" href="#">
+            <img src="/img/icon/gestionar.svg" alt="icon" />Gestionar
+            cuenta</a
+          >
+        </li>
+        <li>
+          <a id="cerrar-sesion" href="#"
+            ><img src="/img/icon/cerrar-sesion.svg" alt="icon" />Cerrar
+            sesión
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--icono user-->
   </body>
 </html>
