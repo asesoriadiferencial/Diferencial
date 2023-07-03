@@ -172,28 +172,24 @@
       <div class="container-formulario">
         <h3>ENVIAR MENSAJE</h3>
         <form action="">
-          <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre"  required/>
           <input
             type="email"
             name="correo"
             id="correo"
             placeholder="Correo electrónico"
+            required
           />
 
-          <select id="pais-select">
-            <option value="" disabled selected>Cod país</option>
-            <option
-              value="AR"
-              data-icon="https://img.icons8.com/color/48/argentina.png"
-            >
-              ARG (+54)
-            </option>
-            <option value="BR" data-icon="bandera_brasil.png">
-              BRA (+55)
-            </option>
-            <option value="CL" data-icon="bandera_chile.png">
-              CHI (+56)
-            </option>
+          <select id="pais-select" required>
+            <option value="" disabled selected>Código</option>
+            <option value="+501">(+501)</option>
+            <option value="+502">(+502)</option>
+            <option value="+503">(+503)</option>
+            <option value="+504">(+504)</option>
+            <option value="+505">(+505)</option>
+            <option value="+506">(+506)</option>
+            <option value="+507">(+507)</option>
           </select>
 
           <input
@@ -201,9 +197,10 @@
             name="telefono"
             id="telefono"
             placeholder="0000 - 0000"
+            required
           />
 
-          <select id="servicios-cmb" name="servicios-cmb" title="servicio-cmb">
+          <select id="servicios-cmb" name="servicios-cmb" title="servicio-cmb" required>
             <option value="" disabled selected hidden>
               Selecciona una opción
             </option>
@@ -231,8 +228,9 @@
             cols="30"
             rows="10"
             placeholder="Escribir mensaje"
+            required
           ></textarea>
-          <input class="btn" type="submit" value="Enviar Mensaje" />
+          <input class="btn" type="submit" value="Enviar Mensaje"/>
         </form>
       </div>
     </div>
@@ -285,7 +283,9 @@
         <ul>
           <a href="/index.html"><li>Inicio</li></a>
           <a href="/nosotros.html"><li>Nosotros</li></a>
-          <a href="/servicio/planificacion-estrategica.html"><li>Servicios</li></a>
+          <a href="/servicio/planificacion-estrategica.html"
+            ><li>Servicios</li></a
+          >
           <a href="/blog.html"><li>Blog</li></a>
           <a href="/contacto.html"><li>Contacto</li></a>
         </ul>
@@ -335,5 +335,6 @@
     </footer>
     <script src="/js/busqueda.js"></script>
     <script src="/js/geolocalizacion.js"></script>
+    <script src="/js/validation-contacto.js"></script>
   </body>
 </html>

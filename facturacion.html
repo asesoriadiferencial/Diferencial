@@ -153,19 +153,17 @@
     <table class="tabla">
       <thead>
         <tr>
-          <th>Servicio/Plan</th>
-          <th>Precio</th>
-          <th>Tipo de facturación</th>
           <th>Fecha</th>
-          <th>Total</th>
+          <th>Plan</th>
+          <th>Tipo de facturación</th>
+          <th>Precio</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Plan optimizado</td>
-          <td>$100.00</td>
-          <td>Mensual</td>
           <td>03-may-2023</td>
+          <td>Plan optimizado</td>
+          <td>Mensual</td>
           <td>$100.00</td>
         </tr>
       </tbody>
@@ -207,6 +205,7 @@
         </label>
         <div class="campo-tarjeta-inputs">
           <input type="text" id="numeroTarjeta" required />
+          <span id="mensajeValidacion"></span>
           <img src="/img/icon/mastercard.svg" alt="Imagen 1" />
           <img src="/img/icon/visa.svg" alt="Imagen 2" />
           <img src="/img/icon/americanexpress.svg" alt="Imagen 3" />
@@ -238,7 +237,7 @@
       </div>
 
       <div class="campo-politicas">
-        <input type="checkbox" id="acepto" name="acepto" />
+        <input type="checkbox" id="acepto" name="acepto"  required/>
         <label for="politicaPrivacidad"
           >He leído y acepto la política de privacidad y de la página web</label
         >
@@ -360,6 +359,8 @@
           dropdownMenu.style.display = "none";
         }
       });
+    </script>
+    <script src="/js/validacion-facturacion.js">
     </script>
   </body>
 </html>

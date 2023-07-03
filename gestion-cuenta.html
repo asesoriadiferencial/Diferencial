@@ -179,31 +179,31 @@
             <div class="form-group">
               <div class="campos">
                 <label for="">Nombres</label>
-                <input type="text" name="" id="" />
+                <input type="text" name="" id="nombre" value="Brandon Lenin" required />
               </div>
             </div>
 
             <div class="form-group">
               <div class="campos">
                 <label for="">Apellidos</label>
-                <input type="text" name="" id="" />
+                <input type="text" name="" id="nombre" value="Cajina Coronado" required />
               </div>
             </div>
 
             <div class="form-group">
               <div class="campos">
                 <label for="">Fecha de nacimiento</label>
-                <input type="date" name="" id="fecha-nacimiento" />
+                <input type="date" name="" id="fecha-nacimiento" value="2001-09-03" required/>
               </div>
             </div>
 
             <div class="form-group">
               <div class="campos">
                 <label for="">Género</label>
-                <select name="" id="genero">
+                <select name="" id="genero" required>
                   <option value="" disabled selected>Selecione</option>
                   <option value="">Femenino</option>
-                  <option value="">Masculino</option>
+                  <option value="" selected>Masculino</option>
                   <option value="">Prefiero no decirlo</option>
                 </select>
               </div>
@@ -213,26 +213,23 @@
               <div class="campos">
                 <label for="">Teléfono</label>
                 <div class="telefono">
-                  <select id="pais-select">
-                    <option value="" disabled selected>Cod país</option>
-                    <option
-                      value="AR"
-                      data-icon="https://img.icons8.com/color/48/argentina.png"
-                    >
-                      ARG (+54)
-                    </option>
-                    <option value="BR" data-icon="bandera_brasil.png">
-                      BRA (+55)
-                    </option>
-                    <option value="CL" data-icon="bandera_chile.png">
-                      CHI (+56)
-                    </option>
+                  <select id="pais-select" required>
+                    <option value="" disabled >Código</option>
+                    <option value="+501">(+501)</option>
+                    <option value="+502">(+502)</option>
+                    <option value="+503">(+503)</option>
+                    <option value="+504">(+504)</option>
+                    <option value="+505" selected>(+505)</option>
+                    <option value="+506">(+506)</option>
+                    <option value="+507">(+507)</option>
                   </select>
                   <input
                     type="tel"
                     name="telefono"
                     id="telefono"
                     placeholder="0000 - 0000"
+                    required
+                    value="5781 - 1598"
                   />
                 </div>
               </div>
@@ -253,11 +250,11 @@
           <form action="" class="formulario">
             <div class="form-group">
               <label for="">Correo electrónico actual</label>
-              <input type="email" />
+              <input type="email" id="correo" required />
             </div>
             <div class="form-group">
               <label for="">Correo electrónico nuevo</label>
-              <input type="email" />
+              <input type="email" id="correo" />
             </div>
             <button>Guardar cambios</button>
           </form>
@@ -312,6 +309,7 @@
               </label>
               <div class="campo-tarjeta-inputs">
                 <input type="text" id="numeroTarjeta" required />
+                <span id="mensajeValidacion"></span>
                 <img src="/img/icon/mastercard.svg" alt="Imagen 1" />
                 <img src="/img/icon/visa.svg" alt="Imagen 2" />
                 <img src="/img/icon/americanexpress.svg" alt="Imagen 3" />
@@ -441,5 +439,7 @@
     <script src="/js/busqueda.js"></script>
     <script src="/js/menu-usuario.js"></script>
     <script src="/js/camara-access.js"></script>
+    <script src="/js/validation-contacto.js"></script>
+    <script src="js/validacion-facturacion.js"></script>
   </body>
 </html>

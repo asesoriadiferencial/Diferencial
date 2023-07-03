@@ -349,24 +349,24 @@
       <div class="container-formulario">
         <h3>ENVIAR MENSAJE</h3>
         <form action="">
-          <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre"  required/>
           <input
             type="email"
             name="correo"
             id="correo"
             placeholder="Correo electrónico"
+            required
           />
 
-          <select id="pais-select">
-            <option value="" disabled selected>Cod país</option>
-            <option
-              value="AR"
-              data-icon="https://img.icons8.com/color/48/argentina.png"
-            >
-              ARG (+54)
-            </option>
-            <option value="BR" data-icon="bandera_brasil.png">BRA (+55)</option>
-            <option value="CL" data-icon="bandera_chile.png">CHI (+56)</option>
+          <select id="pais-select" required>
+            <option value="" disabled selected>Código</option>
+            <option value="+501">(+501)</option>
+            <option value="+502">(+502)</option>
+            <option value="+503">(+503)</option>
+            <option value="+504">(+504)</option>
+            <option value="+505">(+505)</option>
+            <option value="+506">(+506)</option>
+            <option value="+507">(+507)</option>
           </select>
 
           <input
@@ -374,9 +374,10 @@
             name="telefono"
             id="telefono"
             placeholder="0000 - 0000"
+            required
           />
 
-          <select id="servicios-cmb" name="servicios-cmb" title="servicio-cmb">
+          <select id="servicios-cmb" name="servicios-cmb" title="servicio-cmb" required>
             <option value="" disabled selected hidden>
               Selecciona una opción
             </option>
@@ -404,8 +405,9 @@
             cols="30"
             rows="10"
             placeholder="Escribir mensaje"
+            required
           ></textarea>
-          <input class="btn" type="submit" value="Enviar Mensaje" />
+          <input class="btn" type="submit" value="Enviar Mensaje"/>
         </form>
       </div>
     </div>
@@ -524,13 +526,13 @@
 
           <form class="formulario" action="">
             <label for="">Correo electrónico</label>
-            <input type="email" placeholder="Ingresa su correo electrónico" />
+            <input id="correo-inicio" type="email" placeholder="Ingresa su correo electrónico" required />
             <label>Contraseña</label>
-            <input type="password" placeholder="Ingresa tu contraseña" />
+            <input type="password" placeholder="Ingresa tu contraseña" required />
             <a href="/admin/estadisticas.html">
               <input
                 class="btn-form"
-                type="button"
+                type="submit"
                 value="Continuar con mi correo"
               />
             </a>
@@ -558,5 +560,6 @@
     <script src="/js/inicio.js"></script>
     <script src="/js/busqueda.js"></script>
     <script src="/js/modal.js"></script>
+    <script src="/js/validation-contacto.js"></script>
   </body>
 </html>

@@ -420,3 +420,7 @@ h2 {
 #cancelar:hover{
   background-color: #c30000d0;
 }
+
+#help{
+  padding: 1%;
+}

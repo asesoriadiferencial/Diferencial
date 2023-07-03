@@ -61,16 +61,16 @@
 
       <form class="formulario elemento" action="" style="display: none">
         <label for="">Nombres</label>
-        <input type="text" placeholder="Ingrese sus nombres" />
+        <input id="nombre" type="text" placeholder="Ingrese sus nombres" required />
 
         <label for="">Apellidos</label>
-        <input type="text" placeholder="Ingrese sus apellidos" />
+        <input id="nombre" type="text" placeholder="Ingrese sus apellidos" />
 
         <label for="">Fecha de nacimiento</label>
         <input type="date" name="" id="" />
 
         <label for="">Género</label>
-        <select name="" id="">
+        <select name="" id="" required>
           <option value="" disabled selected>Selecione</option>
           <option value="">Femenino</option>
           <option value="">Masculino</option>
@@ -80,15 +80,14 @@
         <label for="">Teléfono</label>
         <div class="telefono">
           <select id="pais-select">
-            <option value="" disabled selected>Cod país</option>
-            <option
-              value="AR"
-              data-icon="https://img.icons8.com/color/48/argentina.png"
-            >
-              ARG (+54)
-            </option>
-            <option value="BR" data-icon="bandera_brasil.png">BRA (+55)</option>
-            <option value="CL" data-icon="bandera_chile.png">CHI (+56)</option>
+            <option value="" disabled selected>Código</option>
+            <option value="+501">(+501)</option>
+            <option value="+502">(+502)</option>
+            <option value="+503">(+503)</option>
+            <option value="+504">(+504)</option>
+            <option value="+505">(+505)</option>
+            <option value="+506">(+506)</option>
+            <option value="+507">(+507)</option>
           </select>
           <input
             type="tel"
@@ -99,7 +98,7 @@
         </div>
 
         <label for="">Correo electrónico</label>
-        <input type="email" placeholder="Ingresa su correo electrónico" />
+        <input id="correo" type="email" placeholder="Ingresa su correo electrónico" required />
 
         <div class="password">
           <label>Contraseña</label>
@@ -112,10 +111,10 @@
           caracteres especiales.
         </p>
 
-        <input type="password" placeholder="Ingresa tu contraseña" />
+        <input type="password" placeholder="Ingresa tu contraseña" required />
 
         <label>Confirmación de contraseña</label>
-        <input type="password" placeholder="Confrimación de contraseña" />
+        <input type="password" placeholder="Confrimación de contraseña"  required/>
 
         <input
           class="btn-form"
@@ -166,5 +165,6 @@
         r[0].style.display = "none";
       });
     </script>
+    <script src="/js/validation-contacto.js"></script>
   </body>
 </html>
