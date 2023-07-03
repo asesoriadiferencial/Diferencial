@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--#region:meta-->
+    <meta charset="UTF-8" />
+    <meta enconding="iso-8859-1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Consultoría empresarial, Asesoria de empresas,"
+    />
+    <meta name="autor" content="Luis Saúl Brenes Chávez" />
+    <meta
+      name="Description"
+      content="Sitio web de la asesoria empresarial Diferencial (proyecto a empresa ficticia)"
+    />
+    <!-- #endregion:meta -->
+    <!-- #region:Links-->
+    <link rel="icon" href="/img/diferencial/logo.ico" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/cabecera.css" />
+    <link rel="stylesheet" href="/css/log-sing-in.css" />
+    <!-- #endregion: Links -->
+    <title>Diferencial: Asesoría Empresarial</title>
+    <script>
+        function redireccionar() {
+          window.location.href = "index.html"; // Reemplaza "nueva_pagina.html" con la ruta de tu página HTML destino
+        }
+      </script>
+  </head>
+
+  <body>
+    <!--CABECERA-->
+    <header class="cabecera">
+      <a href="/index.html" class="cabecera-logo">
+        <img src="/img/diferencial/logo-nombre.png" alt="Logo" />
+      </a>
+    </header>
+    <!--CABEBCERA-->
+
+    <!--CONTENIDO-->
+    <div class="container">
+      <h1 style="width: 30%">
+        Prueba de voz para verificar que no es un robot
+      </h1>
+      <hr />
+      <button class="elemento" id="playButton">
+        <img src="/img/audio.gif" alt="" />
+        Escucha el audio
+      </button>
+      <hr />
+      <button class="elemento" id="recordButton">
+        <img src="/img/play-record.gif" alt="" />
+        Di las cifras del audio
+      </button>
+      <a
+        id="audioLink"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="font-size: 1.7em; text-decoration: underline"
+        >Enlace de audio grabado</a
+      >
+
+      <button class="elemento"  onclick="redireccionar()" style="display: flex; justify-content: center">
+        Terminar registro
+      </button>
+      <div class="politicas">
+        <small id="politica">
+          Al continuar con Google, Facebook o tu email , aceptas los términos de
+          servicio y la Política de privacidad de DIFERENCIAL.
+        </small>
+      </div>
+    </div>
+
+    <div class="decoracion">
+      <img src="/img/decoracion4.png" alt="" />
+      <img src="/img/decoracion3.png" alt="" />
+    </div>
+    <script src="/js/audio.js"></script>
+    <script src="/js/microfono.js"></script>
+  </body>
+</html>

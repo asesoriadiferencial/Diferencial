@@ -23,6 +23,11 @@
     <link rel="stylesheet" href="/css/log-sing-in.css" />
     <!-- #endregion: Links -->
     <title>Diferencial: Asesoría Empresarial</title>
+    <script>
+      function redireccionar() {
+        window.location.href = "/prueba-audio.html"; // Reemplaza "nueva_pagina.html" con la ruta de tu página HTML destino
+      }
+    </script>
   </head>
 
   <body>
@@ -99,13 +104,12 @@
         <div class="password">
           <label>Contraseña</label>
           <p id="ayuda">?</p>
-         
         </div>
 
-        <p class="restriccion" style="display: none;">
+        <p class="restriccion" style="display: none">
           Es obligado utilizar una longitud mínima de 8 caracteres. Se sugiere
-          utilizar una combinación de letras mayúsculas y minúsculas, números
-          y caracteres especiales.
+          utilizar una combinación de letras mayúsculas y minúsculas, números y
+          caracteres especiales.
         </p>
 
         <input type="password" placeholder="Ingresa tu contraseña" />
@@ -115,7 +119,9 @@
 
         <input
           class="btn-form"
+          id="btn-registrase"
           type="button"
+          onclick="redireccionar()"
           value="Registrarme con mi correo"
         />
       </form>
@@ -152,14 +158,13 @@
         });
       });
 
-      ayuda.addEventListener("mouseover", function (){
+      ayuda.addEventListener("mouseover", function () {
         r[0].style.display = "";
       });
 
-      ayuda.addEventListener("mouseout", function (){
+      ayuda.addEventListener("mouseout", function () {
         r[0].style.display = "none";
       });
-
     </script>
   </body>
 </html>
